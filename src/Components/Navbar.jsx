@@ -22,8 +22,9 @@ const Navbar = ({ setPage }) => {
         projects
       </a>
       <a
-        href="./Resume.pdf"
+        href="https://drive.google.com/file/d/1rSDpOF_syC0-vPthkoIms2P765SHumBI/view?usp=sharing"
         target="_blank"
+        rel="noreferrer"
         className="transition hover:font-neueItalic cursor-pointer"
       >
         resume
