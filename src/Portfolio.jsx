@@ -15,7 +15,7 @@ function Portfolio() {
   return (
     <div
       className="font-neueBook bg-backgroundColor
-    p-0 h-ninetyFiveVH w-{9/10} mt-6 mx-6 border-solid border-2 border-darkGray px-10 py-10 gap-0 animate-fadeInFast"
+    p-0 h-full w-{9/10} m-6 mx-6 border-solid border-none border-darkGray px-10 py-10 gap-0 animate-fadeInFast"
     >
       {activePage === "Home" && <Home setPage={setPage} />}
       {activePage === "About" && <About setPage={setPage} />}
