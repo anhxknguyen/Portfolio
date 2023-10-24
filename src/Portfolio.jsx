@@ -1,6 +1,6 @@
 import "./styles/index.css";
 import React from "react";
-import Home from "./Components/Home";
+import Home from "./Pages/Home";
 
 function Portfolio() {
   return (

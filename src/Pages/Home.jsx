@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./homeComponents/Navbar";
-import Intro from "./homeComponents/Intro";
-import Contact from "./homeComponents/Contact";
+import Navbar from "../Components/Navbar";
+import Intro from "../Components/Intro";
+import Contact from "../Components/Contact";
 
 const Home = () => {
   return (
