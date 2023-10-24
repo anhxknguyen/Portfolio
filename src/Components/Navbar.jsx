@@ -22,7 +22,7 @@ const Navbar = ({ setPage }) => {
         projects
       </a>
       <a
-        href="./Resume.pdf"
+        href="../Resume.pdf"
         target="_blank"
         className="transition hover:font-neueItalic cursor-pointer"
       >
