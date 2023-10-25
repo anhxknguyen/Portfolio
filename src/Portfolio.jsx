@@ -6,6 +6,9 @@ import Projects from "./Pages/Projects";
 import Experience from "./Pages/Experience";
 
 function Portfolio() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+
   const [activePage, setActivePage] = useState("Home");
 
   const setPage = (page) => {

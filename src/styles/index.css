@@ -17,6 +17,10 @@
   }
 }
 
+html {
+  height: calc(var(--vh, 1vh) * 100);
+}
+
 @font-face {
   font-family: "thin";
   src: url(./fonts/PPNeueMontreal-Thin.otf) format("opentype");
