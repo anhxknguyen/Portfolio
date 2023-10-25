@@ -14,7 +14,7 @@ function Portfolio() {
 
   return (
     <div
-      className="font-neueBook overflow-scroll no-scrollbar bg-backgroundColor mx-10
+      className="font-neueBook overflow-scroll no-scrollbar bg-backgroundColor mx-10 flex flex-col justify-between items-start
      h-full w-{9/10} border-solid border-2 border-darkGray p-10 shadow-rootShadow gap-0 animate-fadeInFast"
     >
       {activePage === "Home" && <Home setPage={setPage} />}
