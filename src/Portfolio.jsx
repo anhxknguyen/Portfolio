@@ -5,6 +5,7 @@ import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Experience from "./Pages/Experience";
 import { motion, AnimatePresence } from "framer-motion";
+import WorkHardPlayHard from "./Pages/ProjectsFolder/WorkHardPlayHard";
 
 function Portfolio() {
   //Code from https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
@@ -49,6 +50,9 @@ function Portfolio() {
           )}
           {activePage === "Projects" && (
             <Projects activePage={activePage} setPage={setPage} />
+          )}
+          {activePage === "WorkHardPlayHard" && (
+            <WorkHardPlayHard activePage={activePage} setPage={setPage} />
           )}
         </motion.div>
       </AnimatePresence>

@@ -5,7 +5,12 @@ const Projects = ({ setPage }) => {
   return (
     <div>
       <HomeButton setPage={setPage} />
-      Projects Page
+      <a
+        onClick={() => setPage("WorkHardPlayHard")}
+        className="transition hover:font-neueItalic cursor-pointer"
+      >
+        WorkHardPlayHard
+      </a>
     </div>
   );
 };
