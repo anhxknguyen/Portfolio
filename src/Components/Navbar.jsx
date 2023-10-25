@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = ({ setPage }) => {
   return (
-    <ul className="font-neueThin flex flex-col items-end text-justify gap-9 text-5xl text-darkGray">
+    <ul className=" flex flex-col items-end text-justify gap-9 text-3xl lg:text-5xl text-darkGray">
       <a
         onClick={() => setPage("About")}
         className="transition hover:font-neueItalic cursor-pointer"

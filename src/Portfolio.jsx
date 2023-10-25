@@ -14,8 +14,8 @@ function Portfolio() {
 
   return (
     <div
-      className="font-neueBook bg-backgroundColor overflow-scroll no-scrollbar
-     h-full w-{9/10} border-solid border-2 border-darkGray p-10 gap-0 animate-fadeInFast"
+      className="font-neueBook overflow-scroll no-scrollbar bg-backgroundColor mx-10
+     h-full w-{9/10} border-solid border-2 border-darkGray p-10 shadow-rootShadow gap-0 animate-fadeInFast"
     >
       {activePage === "Home" && <Home setPage={setPage} />}
       {activePage === "About" && <About setPage={setPage} />}

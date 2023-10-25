@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Intro from "../Components/Intro";
 import Contact from "../Components/Contact";
+import { motion } from "framer-motion";
 
 const Home = ({ setPage }) => {
   return (
