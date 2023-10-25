@@ -6,8 +6,16 @@ import Projects from "./Pages/Projects";
 import Experience from "./Pages/Experience";
 
 function Portfolio() {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
+  //Code from https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+  function setViewportHeight() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }
+  setViewportHeight();
+  window.addEventListener("resize", () => {
+    setViewportHeight();
+  });
+  //Code from https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
 
   const [activePage, setActivePage] = useState("Home");
 
