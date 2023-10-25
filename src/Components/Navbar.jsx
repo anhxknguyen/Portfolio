@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = ({ activePage, setPage }) => {
+const Navbar = ({ setPage }) => {
   return (
     <ul className=" flex flex-col items-end text-justify gap-9 text-3xl lg:text-4xl text-darkGray">
       <a

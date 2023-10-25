@@ -1,13 +1,19 @@
 import React from "react";
 import HomeButton from "../Components/HomeButton";
-import { AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
-const About = ({ setPage }) => {
+const About = ({ activePage, setPage }) => {
   return (
-    <AnimatePresence>
+    <motion.div
+      key={activePage}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.25 }}
+      exit={{ opacity: 0 }}
+    >
       <HomeButton setPage={setPage} />
       <div>About Page</div>
-    </AnimatePresence>
+    </motion.div>
   );
 };
 
