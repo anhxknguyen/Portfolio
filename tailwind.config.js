@@ -13,6 +13,10 @@ export default {
       },
       height: {
         ninetyFiveVH: "95vh",
+        90: "90%",
+      },
+      width: {
+        95: "95%",
       },
       minWidth: {
         nav: "231px",

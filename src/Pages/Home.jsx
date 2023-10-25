@@ -7,7 +7,7 @@ const Home = ({ setPage }) => {
   return (
     <div
       className="flex flex-col justify-between items-start font-neueBook 
-     h-full w-{9/10} gap-0 animate-fadeInFast"
+     h-full w-{9/10} animate-fadeInFast"
     >
       <div className="animate-fadeInRightMed">
         <Intro />
