@@ -5,14 +5,10 @@ export const FadeInWhenVisible = ({ children }) => {
   return (
     <AnimatePresence>
       <motion.div
-        initial="hidden"
-        animate="visible"
+        initial={{ opacity: 0, transform: "translateX(-20px)" }}
+        animate={{ opacity: 1, transform: "translateX(0px)" }}
         transition={{ duration: 0.75 }}
-        exit="hidden"
-        variants={{
-          visible: { opacity: 1, transform: "translateX(0px)" },
-          hidden: { opacity: 0, transform: "translateX(-20px)" },
-        }}
+        exit={{ opacity: 0, transform: "translateX(-20px)" }}
       >
         {children}
       </motion.div>

@@ -14,13 +14,21 @@ function Portfolio() {
 
   return (
     <div
-      className="font-neueBook overflow-scroll no-scrollbar bg-backgroundColor mx-10 flex flex-col justify-between items-start
+      className="font-neueBook overflow-scroll no-scrollbar bg-backgroundColor ml-5 mr-2 md:ml-10 md:mr-7
      h-full w-{9/10} border-solid border-2 border-darkGray p-10 shadow-rootShadow gap-0 animate-fadeInFast"
     >
-      {activePage === "Home" && <Home setPage={setPage} />}
-      {activePage === "About" && <About setPage={setPage} />}
-      {activePage === "Experience" && <Experience setPage={setPage} />}
-      {activePage === "Projects" && <Projects setPage={setPage} />}
+      {activePage === "Home" && (
+        <Home activePage={activePage} setPage={setPage} />
+      )}
+      {activePage === "About" && (
+        <About activePage={activePage} setPage={setPage} />
+      )}
+      {activePage === "Experience" && (
+        <Experience activePage={activePage} setPage={setPage} />
+      )}
+      {activePage === "Projects" && (
+        <Projects activePage={activePage} setPage={setPage} />
+      )}
     </div>
   );
 }

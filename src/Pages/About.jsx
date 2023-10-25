@@ -1,12 +1,13 @@
 import React from "react";
 import HomeButton from "../Components/HomeButton";
+import { AnimatePresence } from "framer-motion";
 
 const About = ({ setPage }) => {
   return (
-    <div>
+    <AnimatePresence>
       <HomeButton setPage={setPage} />
-      About Page
-    </div>
+      <div>About Page</div>
+    </AnimatePresence>
   );
 };
 
