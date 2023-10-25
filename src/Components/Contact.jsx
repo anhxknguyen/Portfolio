@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex md:flex-col gap-5">
       <a
         target="_blank"
         rel="noreferrer"
