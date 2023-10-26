@@ -1,5 +1,5 @@
 import React from "react";
-import HomeButton from "../Components/BackToHome";
+import HomeButton from "../Components/buttons/BackToHome";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
