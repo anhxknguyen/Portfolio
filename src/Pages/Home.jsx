@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../Components/home-components/Navbar";
-import Intro from "../Components/home-components/Intro";
-import Contact from "../Components/home-components/Contact";
+import Navbar from "../Components/Navbar";
+import Intro from "../Components/Intro";
+import Contact from "../Components/Contact";
 import { motion } from "framer-motion";
 
 const Home = () => {
