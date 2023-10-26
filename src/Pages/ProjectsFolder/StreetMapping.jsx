@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import BackToProjects from "../../Components/buttons/BackToProjects";
+import BackToProjects from "../../Components/Buttons/BackToProjects";
 
 const StreetMapping = () => {
   return (

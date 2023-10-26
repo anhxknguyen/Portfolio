@@ -1,19 +1,19 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
-const BackToProjects = () => {
+const BackToExperience = () => {
   return (
     <motion.div
       initial={{ opacity: 0, transform: "translateX(-20px)" }}
       animate={{ opacity: 1, transform: "translateX(0px)" }}
       transition={{ duration: 0.25 }}
       exit={{ opacity: 0 }}
-      className="font-neueThin w-fit text-md md:text-lg lg:text-xl cursor-pointer lg:hover:font-neueItalic"
+      className="font-neueThin w-fit text-lg lg:text-xl cursor-pointer lg:hover:font-neueItalic"
     >
-      <NavLink to="/projects">{`<`} back to projects</NavLink>
+      <NavLink to="/">{`<`} back to experience</NavLink>
     </motion.div>
   );
 };
 
-export default BackToProjects;
+export default BackToExperience;

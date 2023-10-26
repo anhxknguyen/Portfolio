@@ -1,5 +1,5 @@
 import React from "react";
-import HomeButton from "../Components/buttons/BackToHome";
+import HomeButton from "../Components/Buttons/BackToHome";
 
 const Experience = () => {
   return (

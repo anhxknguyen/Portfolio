@@ -9,7 +9,7 @@ const HomeButton = () => {
       animate={{ opacity: 1, transform: "translateX(0px)" }}
       transition={{ duration: 0.25 }}
       exit={{ opacity: 0 }}
-      className="font-neueThin w-fit text-lg lg:text-xl cursor-pointer hover:font-neueItalic"
+      className="font-neueThin w-fit text-lg lg:text-xl cursor-pointer lg:hover:font-neueItalic"
     >
       <NavLink to="/">{`<`} back to home</NavLink>
     </motion.div>
