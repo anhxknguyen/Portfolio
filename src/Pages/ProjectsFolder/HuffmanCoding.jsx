@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import BackToProjects from "../../Components/Buttons/BackToProjects";
+import BackToProjects from "../../Components/BackToProjects";
 
 const HuffmanCoding = () => {
   return (

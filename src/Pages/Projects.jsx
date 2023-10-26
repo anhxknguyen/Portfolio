@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import HomeButton from "../Components/Buttons/BackToHome";
+import HomeButton from "../Components/BackToHome";
 
 const Projects = () => {
   return (
