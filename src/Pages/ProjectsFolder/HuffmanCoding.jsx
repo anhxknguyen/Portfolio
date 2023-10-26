@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import BackToProjects from "../../Components/BackToProjects";
 
-const WorkHardPlayHard = () => {
+const HuffmanCoding = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -11,9 +11,9 @@ const WorkHardPlayHard = () => {
       exit={{ opacity: 0 }}
     >
       <BackToProjects />
-      Work Hard Play Hard
+      Huffman Coding
     </motion.div>
   );
 };
 
-export default WorkHardPlayHard;
+export default HuffmanCoding;

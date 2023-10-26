@@ -1,10 +1,10 @@
 import React from "react";
-import HomeButton from "../Components/HomeButton";
+import HomeButton from "../Components/BackToHome";
 
-const Experience = ({ setPage }) => {
+const Experience = () => {
   return (
     <div>
-      <HomeButton setPage={setPage} />
+      <HomeButton />
       Experience Page
     </div>
   );

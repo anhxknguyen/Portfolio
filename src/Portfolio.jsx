@@ -1,11 +1,15 @@
 import "./styles/index.css";
-import React, { useState } from "react";
+import React from "react";
 import Home from "./Pages/Home";
+import { AnimatePresence } from "framer-motion";
+import { Route, Routes, useLocation } from "react-router-dom";
 import About from "./Pages/About";
-import Projects from "./Pages/Projects";
 import Experience from "./Pages/Experience";
-import { motion, AnimatePresence } from "framer-motion";
+import Projects from "./Pages/Projects";
 import WorkHardPlayHard from "./Pages/ProjectsFolder/WorkHardPlayHard";
+import StreetMapping from "./Pages/ProjectsFolder/StreetMapping";
+import HuffmanCoding from "./Pages/ProjectsFolder/HuffmanCoding";
+import ThisWebsite from "./Pages/ProjectsFolder/ThisWebsite";
 
 function Portfolio() {
   //Code from https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
@@ -19,42 +23,35 @@ function Portfolio() {
   });
   //Code from https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
 
-  const [activePage, setActivePage] = useState("Home");
-
-  const setPage = (page) => {
-    setActivePage(page);
-  };
-
+  const location = useLocation();
   return (
     <div
       className="font-neueBook overflow-scroll no-scrollbar bg-backgroundColor ml-5 mr-2 md:ml-10 md:mr-7
      h-full w-{9/10} border-solid border-2 border-darkGray p-10 shadow-rootShadow gap-0 animate-fadeInFast"
     >
       <AnimatePresence mode="wait">
-        <motion.div
-          key={activePage}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.25 }}
-          exit={{ opacity: 0 }}
-          className="h-full"
-        >
-          {activePage === "Home" && (
-            <Home activePage={activePage} setPage={setPage} />
-          )}
-          {activePage === "About" && (
-            <About activePage={activePage} setPage={setPage} />
-          )}
-          {activePage === "Experience" && (
-            <Experience activePage={activePage} setPage={setPage} />
-          )}
-          {activePage === "Projects" && (
-            <Projects activePage={activePage} setPage={setPage} />
-          )}
-          {activePage === "WorkHardPlayHard" && (
-            <WorkHardPlayHard activePage={activePage} setPage={setPage} />
-          )}
-        </motion.div>
+        <Routes key={location.pathname} location={location}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route
+            exact
+            path="/projects/workhardplayhard"
+            element={<WorkHardPlayHard />}
+          />
+          <Route
+            exact
+            path="/projects/streetmapping"
+            element={<StreetMapping />}
+          />
+          <Route
+            exact
+            path="/projects/huffmancoding"
+            element={<HuffmanCoding />}
+          />
+          <Route exact path="/projects/thiswebsite" element={<ThisWebsite />} />
+        </Routes>
       </AnimatePresence>
     </div>
   );

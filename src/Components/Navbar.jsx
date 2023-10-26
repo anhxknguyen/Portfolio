@@ -1,34 +1,35 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-const Navbar = ({ setPage }) => {
+const Navbar = () => {
   return (
     <ul className=" flex flex-col items-end text-justify gap-9 text-3xl lg:text-4xl text-darkGray">
-      <a
-        onClick={() => setPage("About")}
+      <NavLink
+        to="/about"
         className="transition hover:font-neueItalic cursor-pointer"
       >
         about
-      </a>
-      <a
-        onClick={() => setPage("Experience")}
+      </NavLink>
+      <NavLink
+        to="/experience"
         className="transition hover:font-neueItalic cursor-pointer"
       >
         experience
-      </a>
-      <a
-        onClick={() => setPage("Projects")}
+      </NavLink>
+      <NavLink
+        to="/projects"
         className="transition hover:font-neueItalic cursor-pointer"
       >
         projects
-      </a>
-      <a
+      </NavLink>
+      <NavLink
         href="https://drive.google.com/file/d/1rSDpOF_syC0-vPthkoIms2P765SHumBI/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
         className="transition hover:font-neueItalic cursor-pointer"
       >
         resume
-      </a>
+      </NavLink>
     </ul>
   );
 };
