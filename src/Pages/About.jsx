@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import HomeButton from "../Components/Buttons/BackToHome";
+import BackToHome from "../Components/Buttons/BackToHome";
 
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
       transition={{ duration: 0.25 }}
       exit={{ opacity: 0 }}
     >
-      <HomeButton />
+      <BackToHome />
       <div>About Page</div>
     </motion.div>
   );
