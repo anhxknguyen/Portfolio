@@ -22,8 +22,8 @@ const Projects = () => {
           className="flex flex-col justify-center gap-2 items-end text-end msm:pt-10"
         >
           <div className="w-1/4sm:w-1/3 flex flex-col">
-            <h1 className="font-neueBold text-base sm:text-lg">Projects</h1>
-            <p className="text-sm sm:text-base">
+            <h1 className="font-neueBold text-base sm:text-xl">Projects</h1>
+            <p className="text-sm sm:text-lg">
               A collection of recent programming projects that I have worked on.
             </p>
           </div>
