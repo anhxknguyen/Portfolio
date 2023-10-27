@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import BackToHome from "../Components/BackToHome";
+import BackToHome from "../Components/buttons/BackToHome";
 
 const About = () => {
   return (

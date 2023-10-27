@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import HomeButton from "../Components/BackToHome";
+import BackToHome from "../Components/buttons/BackToHome";
 import ListLink from "../Components/ListLink";
 
 const Projects = () => {
   return (
     <motion.div className="h-auto overflow-hidden">
-      <HomeButton />
+      <BackToHome />
       <div className="overflow-hidden">
         <motion.div
           initial={{

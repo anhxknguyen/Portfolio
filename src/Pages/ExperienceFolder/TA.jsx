@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import BackToExperience from "../../Components/BackToExperience";
+import BackToExperience from "../../Components/buttons/BackToExperience";
 
 const TA = () => {
   return (
