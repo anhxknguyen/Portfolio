@@ -17,7 +17,7 @@ const BackToExperience = () => {
       exit={{ opacity: 0, transition: { duration: 0.25 } }}
       className="w-fit text-lg lg:text-xl cursor-pointer lg:hover:font-neueItalic"
     >
-      <NavLink to="/">{`<`} back to experience</NavLink>
+      <NavLink to="/experience">{`<`} back to experience</NavLink>
     </motion.div>
   );
 };
