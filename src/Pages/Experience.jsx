@@ -59,7 +59,7 @@ const Experience = () => {
               animate={{
                 opacity: 1,
                 transform: "translateX(0px)",
-                transition: { delay: 0.2, duration: 0.25 },
+                transition: { delay: 0.3, duration: 0.25 },
               }}
               exit={{ opacity: 0, transition: { duration: 0.25 } }}
             >
