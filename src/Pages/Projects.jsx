@@ -19,18 +19,18 @@ const Projects = () => {
             transition: { delay: 0.1, duration: 0.25 },
           }}
           exit={{ opacity: 0, transition: { duration: 0.25 } }}
-          className="flex flex-col justify-center gap-2 items-end text-end md:items-center md:text-center msm:pt-10"
+          className="flex flex-col justify-center gap-2 items-end text-end msm:pt-10"
         >
-          <div className=" md:w-1/3 flex flex-col md:items-center">
-            <h1 className="font-neueBold text-base">Projects</h1>
-            <p className="">
+          <div className="w-1/4sm:w-1/3 flex flex-col">
+            <h1 className="font-neueBold text-base sm:text-lg">Projects</h1>
+            <p className="text-sm sm:text-base">
               A collection of recent programming projects that I have worked on.
             </p>
           </div>
         </motion.div>
 
         <div>
-          <motion.div className="h-full block text-3xl flex flex-col text-end items-end py-10 justify-center md:items-center md:text-5xl gap-10 md:gap-10 no-scrollbar">
+          <motion.div className="h-full block text-3xl flex flex-col text-end items-end py-10 justify-center md:text-5xl lg:text-7xl gap-10 md:gap-10 no-scrollbar">
             <motion.div
               initial={{
                 opacity: 0,
@@ -44,9 +44,10 @@ const Projects = () => {
               exit={{ opacity: 0, transition: { duration: 0.25 } }}
             >
               <ListLink
-                to="workhardplayhard"
-                title="Work Hard, Play Hard"
-                subtitle="Frontend Javascript Project"
+                to="thiswebsite"
+                title="Portfolio Website"
+                subtitle="Frontend React.js"
+                year="2023 - current"
               />
             </motion.div>
 
@@ -63,9 +64,10 @@ const Projects = () => {
               exit={{ opacity: 0, transition: { duration: 0.25 } }}
             >
               <ListLink
-                to="thiswebsite"
-                title="Portfolio Website"
-                subtitle="Frontend React.js Project"
+                to="workhardplayhard"
+                title="Work Hard, Play Hard"
+                subtitle="Frontend Javascript"
+                year="2023"
               />
             </motion.div>
 
@@ -85,7 +87,8 @@ const Projects = () => {
               <ListLink
                 to="streetmapping"
                 title="Street Mapping"
-                subtitle="Backend Java Project"
+                subtitle="Backend Java"
+                year="2023"
               />
             </motion.div>
             <motion.div
@@ -103,7 +106,8 @@ const Projects = () => {
               <ListLink
                 to="huffmancoding"
                 title="Huffman Coding"
-                subtitle="Backend Java Project"
+                subtitle="Backend Java"
+                year="2023"
               />
             </motion.div>
           </motion.div>

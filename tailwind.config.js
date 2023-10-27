@@ -6,6 +6,7 @@ export default {
     extend: {
       screens: {
         msm: "350px",
+        wrapYear: "565px",
       },
       fontFamily: {
         neueThin: ["thin", "sans-serif"],
