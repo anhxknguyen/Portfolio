@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "../Components/Navbar";
 import Intro from "../Components/Intro";
 import Contact from "../Components/Contact";
@@ -13,13 +13,13 @@ const Home = () => {
           opacity: 0,
         }}
         animate={{
-          opacity: 0.2,
+          opacity: 0.05,
           transition: { delay: 0.6, duration: 0.5 },
         }}
         exit={{ opacity: 0, transition: { duration: 0.25 } }}
         src={monkey}
         alt="icon"
-        className="fixed w-1/2 sm:w-40 md:w-30 lg:w-1/5 left-1/2 top-1/2 opacity-20 transform -translate-x-1/2 -translate-y-1/2"
+        className="fixed w-1/2 sm:w-40 md:w-30 lg:w-1/5 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
       />
       <motion.div
         initial={{
