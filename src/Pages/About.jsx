@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import BackToHome from "../Components/buttons/BackToHome";
-import profile from "../images/IMG_6474.png";
+import profile from "../images/profile.jpg";
 
 const About = () => {
   return (
@@ -35,7 +35,7 @@ const About = () => {
           className="flex flex-col items-center lg:items-start gap-5"
         >
           <h1 className="font-neueBold text-3xl lg:text-7xl">About</h1>
-          <h2 className="text-2xl text-center lg:text-start lg:text-3xl">
+          <h2 className="text-lg text-center lg:text-start sm:text-2xl lg:text-3xl">
             I'm Bon Nguyen, a Computer Science Sophomore <br></br>@University of
             Rochester
           </h2>
