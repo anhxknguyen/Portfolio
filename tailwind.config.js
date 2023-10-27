@@ -4,6 +4,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      screens: {
+        msm: "350px",
+      },
       fontFamily: {
         neueThin: ["thin", "sans-serif"],
         neueBook: ["book", "sans-serif"],

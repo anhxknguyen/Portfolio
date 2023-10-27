@@ -15,7 +15,7 @@ const BackToProjects = () => {
         transition: { delay: 0, duration: 0.25 },
       }}
       exit={{ opacity: 0, transition: { duration: 0.25 } }}
-      className="fixed font-neueThin w-fit text-md md:text-lg lg:text-xl cursor-pointer lg:hover:font-neueItalic"
+      className="font-neueThin w-fit text-md md:text-lg lg:text-xl cursor-pointer lg:hover:font-neueItalic"
     >
       <NavLink to="/projects">{`<`} back to projects</NavLink>
     </motion.div>
