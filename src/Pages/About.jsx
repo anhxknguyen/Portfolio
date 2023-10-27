@@ -36,25 +36,24 @@ const About = () => {
         >
           <h1 className="font-neueBold text-3xl lg:text-7xl">About</h1>
           <h2 className="text-lg text-center lg:text-start sm:text-2xl lg:text-3xl">
-            I'm Bon Nguyen, a Computer Science Sophomore <br></br>@University of
-            Rochester
+            I'm Bon Nguyen, an aspiring Software Engineer <br></br>@University
+            of Rochester
           </h2>
-          <div className="flex flex-col sm:text-lg xl:text-xl gap-2">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              vel eros donec ac odio tempor. Diam ut venenatis tellus in metus
-              vulputate eu. Quam quisque id diam vel. Et malesuada fames ac
-              turpis egestas. Duis at consectetur lorem donec massa. Ante metus
-              dictum at tempor commodo ullamcorper a. Tellus in hac habitasse
-              platea. Volutpat odio facilisis mauris sit amet massa vitae. Mi
-              quis hendrerit dolor magna eget est lorem. Adipiscing bibendum est
-              ultricies integer quis auctor elit sed vulputate. Non sodales
-              neque sodales ut etiam sit amet nisl purus. Non odio euismod
-              lacinia at quis risus sed vulputate odio. Mattis aliquam faucibus
-              purus in massa tempor nec feugiat. Arcu non sodales neque sodales
-              ut etiam sit amet. In dictum non consectetur a erat nam at lectus.
-              Blandit aliquam etiam erat velit scelerisque in.
+          <div className="flex flex-col sm:text-lg xl:text-xl gap-3">
+            <p className="leading-relaxed">
+              Ever since writing my first line of code in my senior year of high
+              school, I have been captivated by the infinite possibilities that
+              programming has to offer. The idea of being able to create a
+              product capable of resolving everyday challenges with nothing but
+              my imagination and a computer fascinates me.
+            </p>
+            <p className="leading-relaxed">
+              I am a current sophomore, pursuing a Bachelor's of Science degree
+              in Computer Science at the University of Rochester.
+            </p>
+            <p className="leading-relaxed">
+              When I am not at my computer, I enjoy traveling, filmaking, and
+              hanging out with friends!
             </p>
           </div>
         </motion.div>

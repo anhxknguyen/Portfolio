@@ -3,7 +3,7 @@ import Navbar from "../Components/Navbar";
 import Intro from "../Components/Intro";
 import Contact from "../Components/Contact";
 import { motion } from "framer-motion";
-import monkey from "../images/icon.png";
+import monkey from "../images/monkey.gif";
 
 const Home = () => {
   return (

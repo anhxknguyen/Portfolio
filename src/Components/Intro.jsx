@@ -7,7 +7,7 @@ const Intro = () => {
         Bon <br /> Nguyen
       </h1>
       <h2 className="text-lg md:text-2xl text-darkGray">
-        Full-Stack Software Engineer
+        Aspiring Full-Stack Software Engineer
       </h2>
     </div>
   );
