@@ -66,7 +66,7 @@ const Experience = () => {
               <ListLink
                 to="ta"
                 title="University of Rochester"
-                subtitle="Teaching Assistant"
+                subtitle="Computer Science Workshop Teaching Assistant"
                 year="2023"
               />
             </motion.div>

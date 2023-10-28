@@ -18,7 +18,7 @@ const About = () => {
             transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
           }}
           exit={{ opacity: 0, transition: { duration: 0.25 } }}
-          className="w-2/3 sm:w-3/5 md:w-2/5 lg:w-1/3 lg:self-start"
+          className="w-2/3 select-none sm:w-3/5 md:w-2/5 lg:w-1/3 lg:self-start"
           src={profile}
         />
         <motion.div
@@ -48,7 +48,7 @@ const About = () => {
               my imagination and a computer fascinates me.
             </p>
             <p className="leading-relaxed">
-              I am a current sophomore, pursuing a Bachelor's of Science degree
+              I am a current sophomore pursuing a Bachelor's of Science degree
               in Computer Science at the University of Rochester.
             </p>
             <p className="leading-relaxed">

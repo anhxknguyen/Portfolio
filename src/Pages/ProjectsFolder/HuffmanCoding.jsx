@@ -11,7 +11,7 @@ const HuffmanCoding = () => {
       exit={{ opacity: 0 }}
     >
       <BackToProjects />
-      Huffman Coding
+      Huffman Coding (in progress)
     </motion.div>
   );
 };

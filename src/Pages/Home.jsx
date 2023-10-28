@@ -19,7 +19,7 @@ const Home = () => {
         exit={{ opacity: 0, transition: { duration: 0.25 } }}
         src={monkey}
         alt="icon"
-        className="fixed w-1/2 sm:w-40 md:w-30 lg:w-1/5 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        className="fixed w-1/2 select-none sm:w-40 md:w-30 lg:w-1/5 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
       />
       <motion.div
         initial={{
