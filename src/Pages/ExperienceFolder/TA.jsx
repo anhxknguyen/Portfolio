@@ -79,7 +79,7 @@ const TA = () => {
             programming and leadership skills, but it also allowed me to create
             valuable bonds with both my students and fellow TAs. I have had the
             honor of leading not one, but two groups of hard-working and
-            passionate aspiring programmers like myself and have had the
+            passionate, aspiring programmers like myself and have had the
             priviledge of working with some of the most talented
             leaders/programmers I had ever met in my group of workshop TAs, some
             of whom I now call friends. If anyone of you are reading this
