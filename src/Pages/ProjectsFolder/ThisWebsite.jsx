@@ -11,7 +11,7 @@ const ThisWebsite = () => {
       exit={{ opacity: 0 }}
     >
       <BackToProjects />
-      This Website (in progress)
+      This Website (work in progress)
     </motion.div>
   );
 };

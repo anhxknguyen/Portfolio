@@ -11,7 +11,7 @@ const StreetMapping = () => {
       exit={{ opacity: 0 }}
     >
       <BackToProjects />
-      StreetMapping (in progress)
+      StreetMapping (work in progress)
     </motion.div>
   );
 };

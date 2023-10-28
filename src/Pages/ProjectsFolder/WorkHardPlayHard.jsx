@@ -11,7 +11,7 @@ const WorkHardPlayHard = () => {
       exit={{ opacity: 0 }}
     >
       <BackToProjects />
-      Work Hard Play Hard (in progress)
+      Work Hard Play Hard (work in progress)
     </motion.div>
   );
 };
