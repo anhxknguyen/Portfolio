@@ -16,14 +16,14 @@ const Navbar = () => {
       <NavLink to="/projects" className="hover:font-neueItalic cursor-pointer">
         projects
       </NavLink>
-      <NavLink
+      <a
         href="https://drive.google.com/file/d/1rSDpOF_syC0-vPthkoIms2P765SHumBI/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
         className="hover:font-neueItalic cursor-pointer"
       >
         resume
-      </NavLink>
+      </a>
     </ul>
   );
 };
