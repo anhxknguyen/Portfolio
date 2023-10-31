@@ -11,10 +11,12 @@ const About = () => {
       <div className="flex flex-col lg:flex-row-reverse justify-center lg:justify-between mt-5 msm:mt-2 lg:mt-0 mx-5 sm:mx-10 lg:mx-20 gap-10 lg:gap-24 items-center pt-6 sm:pt-16">
         <motion.img
           initial={{
-            scale: 0,
+            opacity: 0,
+            transform: "translateX(20px)",
           }}
           animate={{
-            scale: 1,
+            opacity: 1,
+            transform: "translateX(0px)",
             transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
           }}
           exit={{ opacity: 0, transition: { duration: 0.25 } }}
