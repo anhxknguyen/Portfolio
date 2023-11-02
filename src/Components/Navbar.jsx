@@ -3,24 +3,24 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <ul className=" flex flex-col items-end text-justify gap-9 text-3xl lg:text-4xl text-darkGray">
-      <NavLink to="/about" className="hover:font-neueItalic cursor-pointer">
+    <ul className="flex flex-col items-end text-3xl text-justify  gap-9 lg:text-4xl text-darkGray">
+      <NavLink to="/about" className="cursor-pointer hover:font-neueItalic">
         about
       </NavLink>
       <NavLink
         to="/experience"
-        className="hover:font-neueItalic cursor-pointer"
+        className="cursor-pointer hover:font-neueItalic"
       >
         experience
       </NavLink>
-      <NavLink to="/projects" className="hover:font-neueItalic cursor-pointer">
+      <NavLink to="/projects" className="cursor-pointer hover:font-neueItalic">
         projects
       </NavLink>
       <a
         href="https://drive.google.com/file/d/1rSDpOF_syC0-vPthkoIms2P765SHumBI/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
-        className="hover:font-neueItalic cursor-pointer"
+        className="cursor-pointer hover:font-neueItalic"
       >
         resume
       </a>

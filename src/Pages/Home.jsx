@@ -7,7 +7,7 @@ import monkey from "../images/monkey.gif";
 
 const Home = () => {
   return (
-    <motion.div className="flex flex-col justify-between items-start font-neueBook h-full w-full">
+    <motion.div className="flex flex-col items-start justify-between w-full h-full font-neueBook">
       <motion.img
         initial={{
           opacity: 0,
@@ -19,7 +19,7 @@ const Home = () => {
         exit={{ opacity: 0, transition: { duration: 0.25 } }}
         src={monkey}
         alt="icon"
-        className="fixed w-1/2 select-none sm:w-40 md:w-30 lg:w-1/5 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        className="fixed w-1/2 transform -translate-x-1/2 -translate-y-1/2 select-none sm:w-40 md:w-30 lg:w-1/5 left-1/2 top-1/2"
       />
       <motion.div
         initial={{

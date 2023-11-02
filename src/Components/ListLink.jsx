@@ -9,9 +9,9 @@ const ListLink = ({ to, title, subtitle, year }) => {
   });
   return (
     <div>
-      <NavLink to={to} className="lg:hover:font-neueItalic cursor-pointer">
+      <NavLink to={to} className="cursor-pointer lg:hover:font-neueItalic">
         <h1>{title}</h1>
-        <h2 className="font-neueBold text-sm msm:text-base md:pt-2">
+        <h2 className="text-sm font-neueBold msm:text-base md:pt-2">
           {subtitle} {width < 565 && <br></br>}({year})
         </h2>
       </NavLink>

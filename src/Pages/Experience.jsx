@@ -19,10 +19,10 @@ const Experience = () => {
             transition: { delay: 0.1, duration: 0.25 },
           }}
           exit={{ opacity: 0, transition: { duration: 0.25 } }}
-          className="flex flex-col justify-center gap-2 items-end text-end msm:pt-10"
+          className="flex flex-col items-end justify-center gap-2 text-end msm:pt-10"
         >
-          <div className="w-1/4sm:w-1/3 flex flex-col">
-            <h1 className="font-neueBold text-base sm:text-xl">Experience</h1>
+          <div className="flex flex-col w-1/4sm:w-1/3">
+            <h1 className="text-base font-neueBold sm:text-xl">Experience</h1>
             <p className="text-sm sm:text-lg">
               A collection of both collegiate and professional
               programming-related experiences that I have.
@@ -31,7 +31,7 @@ const Experience = () => {
         </motion.div>
 
         <div>
-          <motion.div className="h-full block text-3xl flex flex-col text-end items-end py-10 justify-center md:text-5xl lg:text-7xl gap-10 md:gap-10 no-scrollbar">
+          <motion.div className="flex flex-col items-end justify-center block h-full gap-10 py-10 text-3xl text-end md:text-5xl lg:text-7xl md:gap-10 no-scrollbar">
             <motion.div
               initial={{
                 opacity: 0,

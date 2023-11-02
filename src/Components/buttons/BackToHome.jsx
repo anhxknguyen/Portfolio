@@ -15,7 +15,7 @@ const HomeButton = () => {
         transition: { delay: 0, duration: 0.25 },
       }}
       exit={{ opacity: 0, transition: { duration: 0.25 } }}
-      className="w-fit text-lg lg:text-xl cursor-pointer lg:hover:font-neueItalic m-0"
+      className="m-0 text-lg cursor-pointer w-fit lg:text-xl lg:hover:font-neueItalic"
     >
       <NavLink to="/">{`<`} home</NavLink>
     </motion.div>

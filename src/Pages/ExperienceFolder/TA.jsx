@@ -19,7 +19,7 @@ const TA = () => {
   return (
     <div>
       <BackToExperience />
-      <div className="flex w-full flex-col justify-center items-center lg:items-start mt-5 msm:mt-2 px-5 sm:px-10 lg:mt-0 gap-6 pt-6 sm:pt-16">
+      <div className="flex flex-col items-center justify-center w-full gap-6 px-5 pt-6 mt-5 lg:items-start msm:mt-2 sm:px-10 lg:mt-0 sm:pt-16">
         <div>
           <motion.div
             initial={{
@@ -32,10 +32,10 @@ const TA = () => {
               transition: { delay: 0.1, duration: 0.25 },
             }}
             exit={{ opacity: 0, transition: { duration: 0.25 } }}
-            className="w-full font-neueBold flex flex-col msm:text-xl sm:text-3xl lg:text-5xl lg:items-start text-center gap-3"
+            className="flex flex-col w-full gap-3 text-center font-neueBold msm:text-xl sm:text-3xl lg:text-5xl lg:items-start"
           >
             <h1 id="csc-title">CSC 171 Workshop Teaching Assistant</h1>
-            <p className="font-neueBold text-lg text-center lg:text-start sm:text-xl">
+            <p className="text-lg text-center font-neueBold lg:text-start sm:text-xl">
               Skills: Java, Leadership
             </p>
           </motion.div>
@@ -68,7 +68,7 @@ const TA = () => {
             not icebreaker activities increased student engagement. You can read
             more about it here:{" "}
             <a
-              className="text-amber-300 underline hover:text-amber-700"
+              className="underline text-amber-300 hover:text-amber-700"
               href="https://sites.google.com/u.rochester.edu/icebreakers/home"
             >
               Workshop Research Project
