@@ -14,16 +14,7 @@ import Roclab from "./Pages/ExperienceFolder/Roclab";
 import TA from "./Pages/ExperienceFolder/TA";
 
 function Portfolio() {
-  //Code from https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
-  function setViewportHeight() {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-  }
-  setViewportHeight();
-  window.addEventListener("resize", () => {
-    setViewportHeight();
-  });
-  //Code from https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+
 
   const location = useLocation();
   return (
