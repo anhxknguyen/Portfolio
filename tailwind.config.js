@@ -11,9 +11,10 @@ export default {
       fontFamily: {
         neueThin: ["thin", "sans-serif"],
         neueBook: ["book", "sans-serif"],
-        neueMed: [",ed", "sans-serif"],
+        neueMed: ["med", "sans-serif"],
         neueBold: ["bold", "sans-serif"],
         neueItalic: ["italic", "sans-serif"],
+        neueBoldItalic: ["bolditalic", "sans-serif"],
       },
       spacing: {
         100: "100px",

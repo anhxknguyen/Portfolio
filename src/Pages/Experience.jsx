@@ -29,47 +29,20 @@ const Experience = () => {
             </p>
           </div>
         </motion.div>
-
         <div>
           <motion.div className="flex flex-col items-end justify-center block h-full gap-10 py-10 text-3xl text-end md:text-5xl lg:text-7xl md:gap-10 no-scrollbar">
-            <motion.div
-              initial={{
-                opacity: 0,
-                transform: "translateX(-20px)",
-              }}
-              animate={{
-                opacity: 1,
-                transform: "translateX(0px)",
-                transition: { delay: 0.2, duration: 0.25 },
-              }}
-              exit={{ opacity: 0, transition: { duration: 0.25 } }}
-            >
-              <ListLink
-                to="roclab"
-                title="Roclab"
-                subtitle="Frontend Developer & UI/UX Designer"
-                year="2023 - current"
-              />
-            </motion.div>
-            <motion.div
-              initial={{
-                opacity: 0,
-                transform: "translateX(-20px)",
-              }}
-              animate={{
-                opacity: 1,
-                transform: "translateX(0px)",
-                transition: { delay: 0.3, duration: 0.25 },
-              }}
-              exit={{ opacity: 0, transition: { duration: 0.25 } }}
-            >
-              <ListLink
-                to="ta"
-                title="University of Rochester"
-                subtitle="Computer Science Workshop Teaching Assistant"
-                year="2023"
-              />
-            </motion.div>
+            <ListLink
+              to="roclab"
+              title="Roclab"
+              subtitle="Project Manager & Frontend Developer"
+              year="2023 - current"
+            />
+            <ListLink
+              to="ta"
+              title="University of Rochester"
+              subtitle="Computer Science Workshop Teaching Assistant"
+              year="2023"
+            />
           </motion.div>
         </div>
       </div>

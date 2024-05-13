@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div>
       <BackToHome />
-      <div className="flex flex-col items-center justify-center gap-10 pt-6 mx-5 mt-5 lg:flex-row-reverse lg:justify-between msm:mt-2 lg:mt-0 sm:mx-10 lg:mx-20 lg:gap-24 sm:pt-16">
+      <div className="flex flex-col items-center justify-center gap-10 pt-6 mx-0 mt-5 lg:flex-row-reverse lg:justify-between msm:mt-2 lg:mt-0 sm:mx-10 lg:mx-20 lg:gap-24 sm:pt-16">
         <motion.img
           initial={{
             opacity: 0,
@@ -45,16 +45,17 @@ const About = () => {
             <p className="leading-relaxed">
               Ever since writing my first line of code in my senior year of high
               school, I have been captivated by the infinite possibilities that
-              programming has to offer. The idea of being able to create a
-              product capable of resolving everyday challenges with nothing but
-              my imagination and a computer fascinates me.
+              programming and technology has to offer. The idea of being able to
+              create a product capable of resolving everyday challenges with
+              nothing but a product idea and a computer fascinates me.
             </p>
             <p className="leading-relaxed">
-              I am a current sophomore pursuing a Bachelor's of Science degree
-              in Computer Science at the University of Rochester.
+              I am a current sophomore pursuing a Bachelor's of Arts degree in
+              Computer Science and Digital Media Studies at the University of
+              Rochester.
             </p>
             <p className="leading-relaxed">
-              When I am not at my computer, I enjoy traveling, filmaking, and
+              When I am not at my computer, I enjoy traveling, filmmaking, and
               hanging out with friends!
             </p>
           </div>

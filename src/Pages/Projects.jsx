@@ -28,88 +28,40 @@ const Projects = () => {
             </p>
           </div>
         </motion.div>
-
         <div>
           <motion.div className="flex flex-col items-end justify-center block h-full gap-10 py-10 text-3xl text-end md:text-5xl lg:text-7xl md:gap-10 no-scrollbar">
-            <motion.div
-              initial={{
-                opacity: 0,
-                transform: "translateX(-20px)",
-              }}
-              animate={{
-                opacity: 1,
-                transform: "translateX(0px)",
-                transition: { delay: 0.2, duration: 0.25 },
-              }}
-              exit={{ opacity: 0, transition: { duration: 0.25 } }}
-            >
-              <ListLink
-                to="thiswebsite"
-                title="Portfolio Website"
-                subtitle="Frontend React.js"
-                year="2023 - current"
-              />
-            </motion.div>
+            <ListLink
+              to="inkurra"
+              title="Inkurra"
+              subtitle="Fullstack Next.js & Django"
+              year="2023 - current"
+            />
+            <ListLink
+              to="thiswebsite"
+              title="Portfolio Website"
+              subtitle="Frontend React.js"
+              year="2023 - current"
+            />
+            <ListLink
+              to="workhardplayhard"
+              title="Work Hard, Play Hard"
+              subtitle="Frontend Javascript"
+              year="2023"
+            />
 
-            <motion.div
-              initial={{
-                opacity: 0,
-                transform: "translateX(-20px)",
-              }}
-              animate={{
-                opacity: 1,
-                transform: "translateX(0px)",
-                transition: { delay: 0.3, duration: 0.25 },
-              }}
-              exit={{ opacity: 0, transition: { duration: 0.25 } }}
-            >
-              <ListLink
-                to="workhardplayhard"
-                title="Work Hard, Play Hard"
-                subtitle="Frontend Javascript"
-                year="2023"
-              />
-            </motion.div>
+            <ListLink
+              to="streetmapping"
+              title="Street Mapping"
+              subtitle="Backend Java"
+              year="2023"
+            />
 
-            <motion.div
-              initial={{
-                opacity: 0,
-                transform: "translateX(-20px)",
-              }}
-              animate={{
-                opacity: 1,
-                transform: "translateX(0px)",
-                transition: { delay: 0.4, duration: 0.25 },
-              }}
-              exit={{ opacity: 0, transition: { duration: 0.25 } }}
-            >
-              {" "}
-              <ListLink
-                to="streetmapping"
-                title="Street Mapping"
-                subtitle="Backend Java"
-                year="2023"
-              />
-            </motion.div>
-            <motion.div
-              initial={{
-                opacity: 0,
-                transform: "translateX(-20px)",
-              }}
-              animate={{
-                opacity: 1,
-                transform: "translateX(0px)",
-                transition: { delay: 0.5, duration: 0.25 },
-              }}
-              exit={{ opacity: 0, transition: { duration: 0.25 } }}
-            >
-              <ListLink
-                to="huffmancoding"
-                title="Huffman Coding"
-                subtitle="Backend Java"
-                year="2023"
-              />
-            </motion.div>
+            <ListLink
+              to="huffmancoding"
+              title="Huffman Coding"
+              subtitle="Backend Java"
+              year="2023"
+            />
           </motion.div>
         </div>
       </div>

@@ -17,8 +17,7 @@
   }
 }
 
-html
-{
+html {
   height: 100vh;
   height: 100svh;
 }
@@ -46,4 +45,9 @@ html
 @font-face {
   font-family: "italic";
   src: url(./fonts/PPNeueMontreal-Italic.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "bolditalic";
+  src: url(./fonts/PPNeueMontreal-SemiBoldItalic.otf) format("opentype");
 }

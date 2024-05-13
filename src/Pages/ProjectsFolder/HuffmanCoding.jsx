@@ -6,7 +6,7 @@ const HuffmanCoding = () => {
   return (
     <div>
       <BackToProjects />
-      <div className="flex flex-col items-center justify-center w-full gap-6 px-5 pt-6 mt-5 lg:items-start msm:mt-2 sm:px-10 lg:mt-0 sm:pt-16">
+      <div className="flex flex-col items-center justify-center w-full gap-6 px-0 px-5 pt-6 mt-5 lg:items-start msm:mt-2 sm:px-5 lg:mt-0 sm:pt-16">
         <div>
           <motion.div
             initial={{

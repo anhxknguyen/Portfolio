@@ -9,18 +9,17 @@ import Projects from "./Pages/Projects";
 import WorkHardPlayHard from "./Pages/ProjectsFolder/WorkHardPlayHard";
 import StreetMapping from "./Pages/ProjectsFolder/StreetMapping";
 import HuffmanCoding from "./Pages/ProjectsFolder/HuffmanCoding";
-import ThisWebsite from "./Pages/ProjectsFolder/ThisWebsite";
+import ThisWebsite from "./Pages/ProjectsFolder/PortfolioWebsite";
+import Inkurra from "./Pages/ProjectsFolder/Inkurra";
 import Roclab from "./Pages/ExperienceFolder/Roclab";
 import TA from "./Pages/ExperienceFolder/TA";
 
 function Portfolio() {
-
-
   const location = useLocation();
   return (
     <div
       className="font-neueBook overflow-scroll no-scrollbar bg-backgroundColor ml-5 mr-2 md:ml-10 md:mr-7
-     h-full w-{9/10} select-none border-solid border-2 border-darkGray p-10 shadow-rootShadow gap-0 animate-fadeInFast"
+     h-full w-{9/10} select-none border-solid border-2 border-darkGray p-5 msm:p-10 shadow-rootShadow gap-0 animate-fadeInFast"
     >
       <AnimatePresence mode="wait">
         <Routes key={location.pathname} location={location}>
@@ -43,6 +42,7 @@ function Portfolio() {
             path="/projects/huffmancoding"
             element={<HuffmanCoding />}
           />
+          <Route exact path="/projects/inkurra" element={<Inkurra />} />
           <Route exact path="/projects/thiswebsite" element={<ThisWebsite />} />
           <Route exact path="/experience/roclab" element={<Roclab />} />
           <Route exact path="/experience/ta" element={<TA />} />
