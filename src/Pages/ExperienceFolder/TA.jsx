@@ -19,7 +19,7 @@ const TA = () => {
   return (
     <div>
       <BackToExperience />
-      <div className="flex flex-col items-center justify-center w-full gap-6 px-0 px-5 pt-6 mt-5 lg:items-start msm:mt-2 sm:px-5 lg:mt-0 sm:pt-16">
+      <div className="flex flex-col items-center justify-center gap-10 pt-6 mx-0 mt-5 lg:items-start lg:ml-6 sm:pt-16">
         <div>
           <motion.div
             initial={{
@@ -32,7 +32,7 @@ const TA = () => {
               transition: { delay: 0.1, duration: 0.25 },
             }}
             exit={{ opacity: 0, transition: { duration: 0.25 } }}
-            className="flex flex-col w-full gap-3 text-center font-neueBold msm:text-xl sm:text-3xl lg:text-5xl lg:items-start"
+            className="flex flex-col w-full gap-3 text-center lg:text-start font-neueBold msm:text-xl sm:text-3xl lg:text-5xl lg:items-start"
           >
             <h1 id="csc-title">CSC 171 Workshop Teaching Assistant</h1>
             <p className="text-lg text-center font-neueBold lg:text-start sm:text-xl">
