@@ -64,6 +64,7 @@ export default {
         grayWhite: "#B6B5B5",
         lightBlack: "#1C1C1C",
         backgroundColor: "#FAF9F6",
+        beige: "F5F5DC",
       },
       keyframes: {
         gradient: {
@@ -73,7 +74,7 @@ export default {
         },
       },
       animation: {
-        gradient: "gradient 15s ease infinite",
+        gradient: "gradient 120s ease infinite",
       },
     },
   },

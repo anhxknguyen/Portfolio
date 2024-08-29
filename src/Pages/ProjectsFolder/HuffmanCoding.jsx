@@ -6,7 +6,7 @@ const HuffmanCoding = () => {
   return (
     <div>
       <BackToProjects />
-      <div className="flex flex-col items-center justify-center w-full gap-6 px-0 px-5 pt-6 mt-5 lg:items-start msm:mt-2 sm:px-5 lg:mt-0 sm:pt-16">
+      <div className="flex flex-col items-center justify-center gap-10 pt-6 mt-5 sm:mx-16 md:mx-32 lg:mx-44 xl:mx-64 lg:items-start sm:pt-16">
         <div>
           <motion.div
             initial={{
@@ -19,10 +19,10 @@ const HuffmanCoding = () => {
               transition: { delay: 0.1, duration: 0.25 },
             }}
             exit={{ opacity: 0, transition: { duration: 0.25 } }}
-            className="flex flex-col w-full gap-3 text-center font-neueBold msm:text-xl sm:text-3xl lg:text-5xl lg:items-start"
+            className="flex flex-col w-full gap-3 text-center lg:text-start font-neueBold msm:text-xl sm:text-3xl lg:text-5xl lg:items-start"
           >
             <h1>Huffman Coding</h1>
-            <p className="text-lg text-center font-neueBold lg:text-start sm:text-xl">
+            <p className="text-lg text-center font-neueMed lg:text-start sm:text-xl">
               Skills: Java
             </p>
           </motion.div>
@@ -38,8 +38,16 @@ const HuffmanCoding = () => {
             transition: { delay: 0.2, duration: 0.25 },
           }}
           exit={{ opacity: 0, transition: { duration: 0.25 } }}
-          className="flex flex-col gap-3 lg:w-2/3 sm:text-lg"
-        ></motion.div>
+          className="flex flex-col gap-3 sm:text-lg"
+        >
+          <p className="leading-relaxed">
+            During my time as a workshop TA, I was responsible for leading two
+            groups of 12-15 students in a 75 minutes weekly workshop/recitation
+            session. In these sessions, I assisted students in solving complex
+            object-oriented programming problems and reviewed key programming
+            concepts in the Java programming language.
+          </p>
+        </motion.div>
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ const TA = () => {
   return (
     <div>
       <BackToExperience />
-      <div className="flex flex-col items-center justify-center gap-10 pt-6 mx-0 mt-5 lg:items-start lg:ml-6 sm:pt-16">
+      <div className="flex flex-col items-center justify-center gap-10 pt-6 mt-5 sm:mx-16 md:mx-32 lg:mx-44 xl:mx-64 lg:items-start sm:pt-16">
         <div>
           <motion.div
             initial={{
@@ -35,7 +35,7 @@ const TA = () => {
             className="flex flex-col w-full gap-3 text-center lg:text-start font-neueBold msm:text-xl sm:text-3xl lg:text-5xl lg:items-start"
           >
             <h1 id="csc-title">CSC 171 Workshop Teaching Assistant</h1>
-            <p className="text-lg text-center font-neueBold lg:text-start sm:text-xl">
+            <p className="text-lg text-center font-neueMed lg:text-start sm:text-xl">
               Skills: Java, Leadership
             </p>
           </motion.div>
@@ -51,7 +51,7 @@ const TA = () => {
             transition: { delay: 0.2, duration: 0.25 },
           }}
           exit={{ opacity: 0, transition: { duration: 0.25 } }}
-          className="flex flex-col gap-3 lg:w-2/3 sm:text-lg"
+          className="flex flex-col gap-3 sm:text-lg"
         >
           <p className="leading-relaxed">
             During my time as a workshop TA, I was responsible for leading two

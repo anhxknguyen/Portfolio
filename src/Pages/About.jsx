@@ -34,10 +34,10 @@ const About = () => {
             transition: { delay: 0.1, duration: 0.25 },
           }}
           exit={{ opacity: 0, transition: { duration: 0.25 } }}
-          className="flex flex-col items-center gap-5 lg:items-start"
+          className="flex flex-col items-center gap-3 lg:gap-5 lg:items-start"
         >
           <h1 className="text-3xl font-neueBold lg:text-7xl">About</h1>
-          <h2 className="text-lg text-center lg:text-start sm:text-2xl lg:text-3xl">
+          <h2 className="text-lg text-start lg:text-start sm:text-2xl lg:text-3xl">
             I'm Bon Nguyen, an aspiring Software Engineer <br></br>@University
             of Rochester
           </h2>

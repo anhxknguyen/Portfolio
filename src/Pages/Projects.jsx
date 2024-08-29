@@ -33,8 +33,8 @@ const Projects = () => {
             <ListLink
               to="inkurra"
               title="Inkurra"
-              subtitle="Fullstack Next.js & Django"
-              year="2023 - current"
+              subtitle="Fullstack React.js & Firebase"
+              year="2024"
             />
             <ListLink
               to="thiswebsite"
