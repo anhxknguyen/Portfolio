@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import BackToProjects from "../../Components/buttons/BackToProjects";
-import studyspaces from "../../Images/studyspaces.png";
+import studyspaces from "../../images/studyspaces.png";
 
 const StudySpaces = () => {
   return (
