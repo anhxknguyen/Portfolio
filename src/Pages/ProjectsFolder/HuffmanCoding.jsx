@@ -38,7 +38,7 @@ const HuffmanCoding = () => {
             transition: { delay: 0.2, duration: 0.25 },
           }}
           exit={{ opacity: 0, transition: { duration: 0.25 } }}
-          className="flex flex-col gap-3 sm:text-lg"
+          className="flex flex-col gap-8 sm:text-lg"
         >
           <p className="leading-relaxed">
             During my time as a workshop TA, I was responsible for leading two

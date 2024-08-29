@@ -38,6 +38,12 @@ const Experience = () => {
               year="2023 - current"
             />
             <ListLink
+              to="rochci"
+              title="ROC HCI"
+              subtitle="Frontend Research Intern"
+              year="2024 - current"
+            />
+            <ListLink
               to="ta"
               title="University of Rochester"
               subtitle="Computer Science Workshop Teaching Assistant"

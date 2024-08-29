@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import BackToProjects from "../../Components/buttons/BackToProjects";
+import BackToExperience from "../../Components/buttons/BackToExperience";
 
-const Inkurra = () => {
+const ROCHCI = () => {
   return (
     <div>
-      <BackToProjects />
+      <BackToExperience />
       <div className="flex flex-col items-center justify-center gap-10 pt-6 mt-5 sm:mx-16 md:mx-32 lg:mx-44 xl:mx-64 lg:items-start sm:pt-16">
         <div>
           <motion.div
@@ -21,9 +21,9 @@ const Inkurra = () => {
             exit={{ opacity: 0, transition: { duration: 0.25 } }}
             className="flex flex-col w-full gap-3 text-center lg:text-start font-neueBold msm:text-xl sm:text-3xl lg:text-5xl lg:items-start"
           >
-            <h1>Inkurra</h1>
+            <h1>Rochester Human-Computer Interaction Lab</h1>
             <p className="text-lg text-center font-neueMed lg:text-start sm:text-xl">
-              Skills: React.js, JavaScript, Firebase, Figma
+              Skills: React.js, Redux, LESS
             </p>
           </motion.div>
         </div>
@@ -79,4 +79,4 @@ const Inkurra = () => {
   );
 };
 
-export default Inkurra;
+export default ROCHCI;

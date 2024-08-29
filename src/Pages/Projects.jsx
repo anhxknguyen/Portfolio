@@ -31,6 +31,12 @@ const Projects = () => {
         <div>
           <motion.div className="flex flex-col items-end justify-center block h-full gap-10 py-10 text-3xl text-end md:text-5xl lg:text-7xl md:gap-10 no-scrollbar">
             <ListLink
+              to="studyspaces"
+              title="Study Spaces"
+              subtitle="BrickHackX Best AI Application Winner"
+              year="2024"
+            />
+            <ListLink
               to="inkurra"
               title="Inkurra"
               subtitle="Fullstack React.js & Firebase"
