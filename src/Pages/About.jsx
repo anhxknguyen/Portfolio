@@ -38,8 +38,8 @@ const About = () => {
         >
           <h1 className="text-3xl font-neueBold lg:text-7xl">About</h1>
           <h2 className="text-lg text-start lg:text-start sm:text-2xl lg:text-3xl">
-            I'm Bon Nguyen, an aspiring Software Engineer <br></br>@University
-            of Rochester
+            I'm Bon Nguyen, an aspiring Product Manager and Software Engineer
+            @University of Rochester
           </h2>
           <div className="flex flex-col gap-3 sm:text-lg xl:text-xl">
             <p className="leading-relaxed">
@@ -50,9 +50,11 @@ const About = () => {
               nothing but a product idea and a computer fascinates me.
             </p>
             <p className="leading-relaxed">
-              I am a current sophomore pursuing a Bachelor's of Arts degree in
-              Computer Science and Digital Media Studies at the University of
-              Rochester.
+              My current favorite frontend frameworks are React.js and
+              TailwindCSS; I have used both frameworks extensively to create and
+              work on many projects, including this portfolio website!
+              Currently, I am learning more about server-side rendering with
+              Next.js.
             </p>
             <p className="leading-relaxed">
               When I am not at my computer, I enjoy traveling, filmmaking, and

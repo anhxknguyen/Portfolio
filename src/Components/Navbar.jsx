@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <ul className="flex flex-col items-end text-3xl text-justify  gap-9 lg:text-4xl text-darkGray">
+    <ul className="flex flex-col items-end text-2xl text-justify sm:text-3xl gap-9 lg:text-4xl text-darkGray">
       <NavLink to="/about" className="cursor-pointer hover:font-neueItalic">
         about
       </NavLink>
