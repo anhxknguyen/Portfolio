@@ -61,10 +61,11 @@ export default {
       },
       colors: {
         darkGray: "#535351",
+        shadow: "#474232",
         grayWhite: "#B6B5B5",
         lightBlack: "#1C1C1C",
         backgroundColor: "#FAF9F6",
-        beige: "F5F5DC",
+        beige: "#F5F5DC",
       },
       keyframes: {
         gradient: {

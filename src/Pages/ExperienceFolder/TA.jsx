@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import BackToExperience from "../../Components/buttons/BackToExperience";
 import { useState } from "react";
+import SubInfo from "../../Components/SubInfo";
 
 const TA = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -16,11 +17,17 @@ const TA = () => {
     }
   });
 
+  const sections = ["Current Role", "Former Roles", "Skills"];
+  const descs = [
+    "Data Structures and Algorithms TA",
+    "Intro to CS Workshop Leader",
+    "Java, Leadership",
+  ];
   return (
     <div>
       <BackToExperience />
       <div className="flex flex-col items-center justify-center gap-10 pt-6 mt-5 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-44 lg:items-start sm:pt-16">
-        <div>
+        <div className="w-full">
           <motion.div
             initial={{
               opacity: 0,
@@ -32,12 +39,17 @@ const TA = () => {
               transition: { delay: 0.1, duration: 0.25 },
             }}
             exit={{ opacity: 0, transition: { duration: 0.25 } }}
-            className="flex flex-col w-full gap-3 text-center lg:text-start font-neueBold msm:text-xl sm:text-3xl lg:text-5xl lg:items-start"
+            className="flex flex-col w-full gap-3 xl:flex-row xl:justify-between text-start lg:items-center"
           >
-            <h1 id="csc-title">CSC 171 Workshop Teaching Assistant</h1>
-            <p className="text-lg text-center font-neueMed lg:text-start sm:text-xl">
-              Skills: Java, Leadership
-            </p>
+            <div className="flex flex-col w-full gap-2">
+              <h1 className="text-4xl font-neueBold sm:text-5xl">
+                Computer Science Teaching Assistant
+              </h1>
+              <p className="text-md msm:text-lg md:text-xl">
+                What better way to learn than through educating?
+              </p>
+            </div>
+            <SubInfo sections={sections} descs={descs} />
           </motion.div>
         </div>
         <motion.div
@@ -68,8 +80,10 @@ const TA = () => {
             not icebreaker activities increased student engagement. You can read
             more about it here:{" "}
             <a
-              className="underline text-amber-300 hover:text-amber-700"
+              className="text-amber-500 hover:text-orange-500"
               href="https://sites.google.com/u.rochester.edu/icebreakers/home"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Workshop Research Project
             </a>

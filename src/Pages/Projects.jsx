@@ -24,50 +24,94 @@ const Projects = () => {
           <div className="flex flex-col w-1/4sm:w-1/3">
             <h1 className="text-base font-neueBold sm:text-xl">Projects</h1>
             <p className="text-sm sm:text-lg">
-              A collection of recent programming projects that I have worked on.
+              A collection of recent projects that I have worked on.
             </p>
           </div>
         </motion.div>
         <div>
           <motion.div className="flex flex-col items-end justify-center block h-full gap-10 py-10 text-3xl text-end md:text-5xl lg:text-7xl md:gap-10 no-scrollbar">
-            <ListLink
-              to="studyspaces"
-              title="Study Spaces"
-              subtitle="BrickHackX Best AI Application Winner"
-              year="2024"
-            />
-            <ListLink
-              to="inkurra"
-              title="Inkurra"
-              subtitle="Fullstack React.js & Firebase"
-              year="2024"
-            />
-            <ListLink
-              to="thiswebsite"
-              title="Portfolio Website"
-              subtitle="Frontend React.js"
-              year="2023 - current"
-            />
-            <ListLink
-              to="workhardplayhard"
-              title="Work Hard, Play Hard"
-              subtitle="Frontend Javascript"
-              year="2023"
-            />
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <ListLink
+                to="studyspaces"
+                title="Study Spaces"
+                subtitle="BrickHackX Best AI Application Winner"
+                year="2024"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <ListLink
+                to="inkurra"
+                title="Inkurra"
+                subtitle="Fullstack React.js & Firebase"
+                year="2024"
+              />
+            </motion.div>
 
-            <ListLink
-              to="streetmapping"
-              title="Street Mapping"
-              subtitle="Backend Java"
-              year="2023"
-            />
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <ListLink
+                to="thiswebsite"
+                title="Portfolio Website"
+                subtitle="Frontend React.js"
+                year="2023 - current"
+              />
+            </motion.div>
 
-            <ListLink
-              to="huffmancoding"
-              title="Huffman Coding"
-              subtitle="Backend Java"
-              year="2023"
-            />
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <ListLink
+                to="workhardplayhard"
+                title="Work Hard, Play Hard"
+                subtitle="Frontend Javascript"
+                year="2023"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <ListLink
+                to="streetmapping"
+                title="Street Mapping"
+                subtitle="Backend Java"
+                year="2023"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <ListLink
+                to="huffmancoding"
+                title="Huffman Coding"
+                subtitle="Backend Java"
+                year="2023"
+              />
+            </motion.div>
           </motion.div>
         </div>
       </div>

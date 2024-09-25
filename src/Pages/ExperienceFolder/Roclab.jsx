@@ -2,13 +2,24 @@
 import React from "react";
 import { motion } from "framer-motion";
 import BackToExperience from "../../Components/buttons/BackToExperience";
+import SubInfo from "../../Components/SubInfo";
+import melSearch from "../../images/melcourses/mel-searchbg.png";
+import cdcsOriginal from "../../images/melcourses/cdcs-original.png";
+import workdayFlow from "../../images/melcourses/workday-flow.gif";
 
 const Roclab = () => {
+  const sections = ["Current Role", "Former Roles", "Timeline", "Skills"];
+  const descs = [
+    "Product Manager",
+    "UX Designer, Frontend Developer",
+    "Ongoing",
+    "Next, Typescript, Figma",
+  ];
   return (
     <div>
       <BackToExperience />
-      <div className="flex flex-col items-center justify-center gap-10 pt-6 mt-5 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-44 lg:items-start sm:pt-16">
-        <div>
+      <div className="flex flex-col items-center justify-center gap-10 pt-6 mt-5 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-32 lg:items-start sm:pt-16">
+        <div className="w-full">
           <motion.div
             initial={{
               opacity: 0,
@@ -20,12 +31,23 @@ const Roclab = () => {
               transition: { delay: 0.1, duration: 0.25 },
             }}
             exit={{ opacity: 0, transition: { duration: 0.25 } }}
-            className="flex flex-col w-full gap-3 text-center lg:text-start font-neueBold msm:text-xl sm:text-3xl lg:text-5xl lg:items-start"
+            className="flex flex-col w-full gap-3 xl:flex-row xl:justify-between text-start lg:items-center"
           >
-            <h1>Roclab</h1>
-            <p className="text-lg text-center font-neueMed lg:text-start sm:text-xl">
-              Skills: Next.js, React.js, TypeScript.js, Figma
-            </p>
+            <div className="flex flex-col w-full gap-2">
+              <h1 className="text-4xl font-neueBold sm:text-5xl">Melcourses</h1>
+              <p className="text-md msm:text-lg md:text-xl">
+                Designing a solution for seamless course scheduling.
+              </p>
+              <a
+                className="w-fit text-amber-500 hover:text-orange-500"
+                href="https://melcourses.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit melcourses here &rarr;
+              </a>
+            </div>
+            <SubInfo sections={sections} descs={descs} />
           </motion.div>
         </div>
         <motion.div
@@ -41,39 +63,65 @@ const Roclab = () => {
           exit={{ opacity: 0, transition: { duration: 0.25 } }}
           className="flex flex-col gap-8 sm:text-lg"
         >
-          <p className="leading-relaxed">
-            During my time as a workshop TA, I was responsible for leading two
-            groups of 12-15 students in a 75 minutes weekly workshop/recitation
-            session. In these sessions, I assisted students in solving complex
-            object-oriented programming problems and reviewed key programming
-            concepts in the Java programming language.
-          </p>
-          <p className="leading-relaxed">
-            As a workshop TA, I was also responsible for conducting a
-            semester-long research project on how to improve on the
-            effectiveness of the current workshop program. I worked alongside
-            Sherry Zhao, a friend and fellow workshop TA, to identify whether or
-            not icebreaker activities increased student engagement. You can read
-            more about it here:{" "}
-            <a
-              className="underline text-amber-300 hover:text-amber-700"
-              href="https://sites.google.com/u.rochester.edu/icebreakers/home"
+          <div className="flex flex-col items-center w-full gap-10">
+            <motion.img
+              initial={{
+                opacity: 0,
+                transform: "translateX(20px)",
+              }}
+              animate={{
+                opacity: 1,
+                transform: "translateX(0px)",
+                transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
+              }}
+              exit={{ opacity: 0, transition: { duration: 0.25 } }}
+              className="select-none xl:w-4/5"
+              src={melSearch}
+            />
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col w-full gap-2 sm:gap-4 xl:w-4/5"
             >
-              Workshop Research Project
-            </a>
-          </p>
-          <p>
-            Working as a workshop TA not only allowed me to continue to hone my
-            programming and leadership skills, but it also allowed me to create
-            valuable bonds with both my students and fellow TAs. I have had the
-            honor of leading not one, but two groups of hard-working and
-            passionate, aspiring programmers like myself and have had the
-            priviledge of working with some of the most talented
-            leaders/programmers I had ever met in my group of workshop TAs, some
-            of whom I now call friends. If anyone of you are reading this
-            (whether you're a student or a fellow workshop TA), thank you for
-            making my first real job so memorable!
-          </p>
+              <h1 className="text-2xl font-neueBold md:text-4xl">
+                Defining the Problem
+              </h1>
+              <p className="leading-relaxed text-md sm:text-lg md:text-2xl">
+                The current user flow for course scheduling on Workday and the
+                school's scheduling website is inefficient and unintuitive.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col w-full gap-2 xl:flex-row sm:gap-4"
+            >
+              <div className="flex flex-col gap-2 xl:w-1/2">
+                <h1 className="text-lg sm:text-2xl xl:self-center font-neueMed">
+                  UR Course Scheduler
+                </h1>
+                <motion.img
+                  exit={{ opacity: 0, transition: { duration: 0.25 } }}
+                  className="object-cover select-none"
+                  src={cdcsOriginal}
+                />
+              </div>
+
+              <div className="flex flex-col gap-2 xl:w-1/2">
+                <h1 className="text-lg sm:text-2xl xl:self-center font-neueMed">
+                  Workday
+                </h1>
+                <motion.img
+                  className="object-cover select-none"
+                  src={workdayFlow}
+                />
+              </div>
+            </motion.div>
+          </div>
         </motion.div>
       </div>
     </div>

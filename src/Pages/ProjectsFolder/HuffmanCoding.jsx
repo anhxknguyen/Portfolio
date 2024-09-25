@@ -1,13 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import BackToProjects from "../../Components/buttons/BackToProjects";
+import SubInfo from "../../Components/SubInfo";
 
 const HuffmanCoding = () => {
+  const sections = ["Timeline", "Skills"];
+  const descs = ["2 Days", "Java"];
   return (
     <div>
       <BackToProjects />
       <div className="flex flex-col items-center justify-center gap-10 pt-6 mt-5 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-44 lg:items-start sm:pt-16">
-        <div>
+        <div className="w-full">
           <motion.div
             initial={{
               opacity: 0,
@@ -19,12 +22,17 @@ const HuffmanCoding = () => {
               transition: { delay: 0.1, duration: 0.25 },
             }}
             exit={{ opacity: 0, transition: { duration: 0.25 } }}
-            className="flex flex-col w-full gap-3 text-center lg:text-start font-neueBold msm:text-xl sm:text-3xl lg:text-5xl lg:items-start"
+            className="flex flex-col w-full gap-3 xl:flex-row xl:justify-between text-start lg:items-center"
           >
-            <h1>Huffman Coding</h1>
-            <p className="text-lg text-center font-neueMed lg:text-start sm:text-xl">
-              Skills: Java
-            </p>
+            <div className="flex flex-col w-full gap-2">
+              <h1 className="text-4xl font-neueBold sm:text-5xl">
+                Huffman Coding
+              </h1>
+              <p className="text-md msm:text-lg md:text-xl">
+                Encoding and decoding files for seamless compression.
+              </p>
+            </div>
+            <SubInfo sections={sections} descs={descs} />
           </motion.div>
         </div>
         <motion.div

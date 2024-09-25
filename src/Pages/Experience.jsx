@@ -24,8 +24,8 @@ const Experience = () => {
           <div className="flex flex-col w-1/4sm:w-1/3">
             <h1 className="text-base font-neueBold sm:text-xl">Experience</h1>
             <p className="text-sm sm:text-lg">
-              A collection of both collegiate and professional
-              programming-related experiences that I have.
+              A collection of both collegiate and professional related
+              programming/product experiences that I have.
             </p>
           </div>
         </motion.div>
@@ -33,7 +33,7 @@ const Experience = () => {
           <motion.div className="flex flex-col items-end justify-center block h-full gap-10 py-10 text-3xl text-end md:text-5xl lg:text-7xl md:gap-10 no-scrollbar">
             <ListLink
               to="roclab"
-              title="Roclab"
+              title="Melcourses"
               subtitle="Product Manager & Frontend Developer"
               year="2023 - current"
             />
