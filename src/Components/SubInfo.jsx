@@ -6,11 +6,11 @@ const SubInfo = ({ sections, descs }) => {
           <div className="flex flex-col justify-between w-full sm:flex-row ">
             <p
               key={i}
-              className="text-sm text-start text-zinc-700 font-neueMed lg:text-start sm:text-lg"
+              className="text-sm text-start text-zinc-700 lg:text-start sm:text-lg"
             >
               {section}:
             </p>
-            <p className="text-sm text-start text-zinc-700 font-neueMed lg:text-start sm:text-lg">
+            <p className="text-md text-start text-zinc-700 font-neueMed lg:text-start sm:text-lg">
               {descs[i]}
             </p>
           </div>
