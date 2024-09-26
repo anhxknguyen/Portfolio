@@ -140,7 +140,7 @@ const Roclab = () => {
               transition={{ duration: 0.5 }}
               className="flex flex-col w-full gap-2 xl:flex-row sm:gap-10"
             >
-              <div className="flex flex-col gap-2 p-4 border sm:p-6 sm:gap-4 xl:w-1/2 border-lightBlack">
+              <div className="flex flex-col gap-2 p-4 bg-zinc-50 sm:p-6 sm:gap-4 xl:w-1/2 drop-shadow-2xl">
                 <h1 className="text-lg sm:text-2xl xl:self-center font-neueBold">
                   UR Native Course Scheduler
                 </h1>
@@ -150,22 +150,18 @@ const Roclab = () => {
                   src={cdcsOriginal}
                 />
                 <div className="flex flex-col gap-6">
-                  <section>
-                    <h1 className="text-green-900 lg:text-2xl font-neueMed">
-                      Strengths:
-                    </h1>
+                  <section className="text-green-700">
+                    <h1 className=" lg:text-2xl font-neueMed">Strengths:</h1>
                     <ul className="leading-relaxed font-neueMed text-md sm:text-lg md:text-xl">
-                      <li className="text-green-900">
+                      <li>
                         Data is constantly maintained and updated by the
                         University
                       </li>
                     </ul>
                   </section>
-                  <section>
-                    <h1 className="text-red-900 lg:text-2xl font-neueMed">
-                      Weaknesses:
-                    </h1>
-                    <ul className="leading-relaxed text-red-900 font-neueMed text-md sm:text-lg md:text-xl">
+                  <section className="text-red-900">
+                    <h1 className="lg:text-2xl font-neueMed">Weaknesses:</h1>
+                    <ul className="leading-relaxed font-neueMed text-md sm:text-lg md:text-xl">
                       <li>Too much information on the screen</li>
                       <li>UI is outdated and crowded</li>
                       <li>Lacks a scheduling feature</li>
@@ -174,7 +170,7 @@ const Roclab = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-2 p-4 border sm:p-6 border-lightBlack sm:gap-4 xl:w-1/2">
+              <div className="flex flex-col gap-2 p-4 bg-zinc-50 sm:p-6 sm:gap-4 xl:w-1/2 drop-shadow-2xl">
                 <h1 className="text-lg sm:text-2xl xl:self-center font-neueBold">
                   Workday
                 </h1>
@@ -183,21 +179,15 @@ const Roclab = () => {
                   src={workdayFlow}
                 />
                 <div className="flex flex-col gap-6">
-                  <section>
-                    <h1 className="text-green-900 lg:text-2xl font-neueMed">
-                      Strengths:
-                    </h1>
+                  <section className="text-green-700">
+                    <h1 className=" lg:text-2xl font-neueMed">Strengths:</h1>
                     <ul className="leading-relaxed font-neueMed text-md sm:text-lg md:text-xl">
-                      <li className="text-green-900">
-                        Course search page is intuitive to use
-                      </li>
+                      <li>Course search page is intuitive to use</li>
                     </ul>
                   </section>
-                  <section>
-                    <h1 className="text-red-900 lg:text-2xl font-neueMed">
-                      Weaknesses:
-                    </h1>
-                    <ul className="leading-relaxed text-red-900 font-neueMed text-md sm:text-lg md:text-xl">
+                  <section className="text-red-900">
+                    <h1 className="lg:text-2xl font-neueMed">Weaknesses:</h1>
+                    <ul className="leading-relaxed font-neueMed text-md sm:text-lg md:text-xl">
                       <li>Login required to use Workday</li>
                       <li>Requires too many actions to add/save courses</li>
                       <li>Lectures and workshops/labs are not grouped</li>

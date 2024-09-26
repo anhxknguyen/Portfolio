@@ -34,7 +34,7 @@ const Experience = () => {
             <ListLink
               to="roclab"
               title="Melcourses"
-              subtitle="Product Manager & Frontend Developer"
+              subtitle="Product Manager & UX/Frontend Developer"
               year="2023 - current"
             />
             <ListLink
