@@ -63,7 +63,7 @@ const Roclab = () => {
           exit={{ opacity: 0, transition: { duration: 0.25 } }}
           className="flex flex-col gap-8 sm:text-lg"
         >
-          <div className="flex flex-col items-center w-full gap-10">
+          <div className="flex flex-col items-center w-full gap-10 md:gap-16 lg:gap-24">
             <motion.img
               initial={{
                 opacity: 0,
@@ -98,27 +98,39 @@ const Roclab = () => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="flex flex-col w-full gap-2 xl:flex-row sm:gap-4"
+              className="flex flex-col w-full gap-2 xl:flex-row sm:gap-10"
             >
-              <div className="flex flex-col gap-2 xl:w-1/2">
-                <h1 className="text-lg sm:text-2xl xl:self-center font-neueMed">
+              <div className="flex flex-col gap-2 p-6 border sm:gap-4 xl:w-1/2 border-lightBlack">
+                <h1 className="text-lg sm:text-2xl xl:self-center font-neueBold">
                   UR Course Scheduler
                 </h1>
                 <motion.img
                   exit={{ opacity: 0, transition: { duration: 0.25 } }}
-                  className="object-cover select-none"
+                  className="object-cover select-none xl:h-335"
                   src={cdcsOriginal}
                 />
+                <h1 className="text-2xl font-neueMed">Issues:</h1>
+                <ul className="leading-relaxed font-neueMed text-md sm:text-lg md:text-xl">
+                  <li>- Too much information on the screen</li>
+                  <li>- UI is outdated and crowded</li>
+                  <li>- Confusing to navigate</li>
+                </ul>
               </div>
 
-              <div className="flex flex-col gap-2 xl:w-1/2">
-                <h1 className="text-lg sm:text-2xl xl:self-center font-neueMed">
+              <div className="flex flex-col gap-2 p-6 border border-lightBlack sm:gap-4 xl:w-1/2">
+                <h1 className="text-lg sm:text-2xl xl:self-center font-neueBold">
                   Workday
                 </h1>
                 <motion.img
-                  className="object-cover select-none"
+                  className="object-cover select-none xl:h-335"
                   src={workdayFlow}
                 />
+                <h1 className="text-2xl font-neueMed">Issues:</h1>
+                <ul className="leading-relaxed font-neueMed text-md sm:text-lg md:text-xl">
+                  <li>- Login required to use Workday</li>
+                  <li>- Too many clicks</li>
+                  <li>- Confusing to navigate</li>
+                </ul>
               </div>
             </motion.div>
           </div>

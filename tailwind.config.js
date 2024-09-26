@@ -31,6 +31,7 @@ export default {
         85: "85%",
         50: "50%",
         40: "40%",
+        335: "335px",
       },
       width: {
         95: "95%",
@@ -65,6 +66,7 @@ export default {
         grayWhite: "#B6B5B5",
         lightBlack: "#1C1C1C",
         backgroundColor: "#FAF9F6",
+        backgroundCard: "#fff7ed",
         beige: "#F5F5DC",
       },
       keyframes: {
