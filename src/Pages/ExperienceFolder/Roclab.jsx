@@ -140,7 +140,7 @@ const Roclab = () => {
               transition={{ duration: 0.5 }}
               className="flex flex-col w-full gap-2 xl:flex-row sm:gap-10"
             >
-              <div className="flex flex-col gap-2 p-4 bg-zinc-50 sm:p-6 sm:gap-4 xl:w-1/2 drop-shadow-2xl">
+              <div className="flex flex-col gap-2 p-4 bg-backgroundCard sm:p-6 sm:gap-4 xl:w-1/2 drop-shadow-xl">
                 <h1 className="text-lg sm:text-2xl xl:self-center font-neueBold">
                   UR Native Course Scheduler
                 </h1>
@@ -170,7 +170,7 @@ const Roclab = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-2 p-4 bg-zinc-50 sm:p-6 sm:gap-4 xl:w-1/2 drop-shadow-2xl">
+              <div className="flex flex-col gap-2 p-4 bg-backgroundCard sm:p-6 sm:gap-4 xl:w-1/2 drop-shadow-xl">
                 <h1 className="text-lg sm:text-2xl xl:self-center font-neueBold">
                   Workday
                 </h1>

@@ -67,7 +67,7 @@ export default {
         grayWhite: "#B6B5B5",
         lightBlack: "#1C1C1C",
         backgroundColor: "#FAF9F6",
-        backgroundCard: "#fff7ed",
+        backgroundCard: "#fffefa",
         beige: "#F5F5DC",
       },
       keyframes: {
