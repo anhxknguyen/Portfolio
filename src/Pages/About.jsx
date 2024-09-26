@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div>
       <BackToHome />
-      <div className="flex flex-col items-center justify-center gap-10 pt-6 mx-0 mt-5 lg:flex-row-reverse lg:justify-between msm:mt-2 lg:mt-0 sm:mx-10 lg:mx-20 lg:gap-24 sm:pt-16">
+      <div className="flex flex-col items-center justify-center gap-10 pt-6 mx-0 mt-5 xl:flex-row-reverse xl:justify-between msm:mt-2 xl:mt-0 sm:mx-10 xl:mx-20 xl:gap-24 sm:pt-16">
         <motion.img
           initial={{
             opacity: 0,
@@ -20,7 +20,7 @@ const About = () => {
             transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
           }}
           exit={{ opacity: 0, transition: { duration: 0.25 } }}
-          className="w-2/3 select-none sm:w-3/5 md:w-2/5 lg:w-1/3 lg:self-start"
+          className="w-2/3 select-none sm:w-3/5 md:w-2/5 xl:w-1/3 xl:self-start"
           src={profile}
         />
         <motion.div

@@ -27,6 +27,7 @@ export default {
       },
       height: {
         ninetyFiveVH: "95vh",
+        95: "95%",
         90: "90%",
         85: "85%",
         50: "50%",

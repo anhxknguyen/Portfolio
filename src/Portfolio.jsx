@@ -20,8 +20,8 @@ function Portfolio() {
   const location = useLocation();
   return (
     <div
-      className="font-neueBook overflow-scroll no-scrollbar bg-backgroundColor ml-5 mr-2 md:ml-10 md:mr-7
-     h-full w-{9/10} border-solid border-2 border-darkGray p-3 msm:p-5 md:p-10 shadow-rootShadow gap-0 animate-fadeInFast"
+      className="font-neueBook overflow-scroll no-scrollbar bg-backgroundColor sm:ml-5 sm:mr-2 md:ml-10 md:mr-7
+     h-full w-{9/10} border-solid border-2 border-darkGray p-3 msm:p-5 md:p-10 sm:shadow-rootShadow gap-0 animate-fadeInFast"
     >
       <AnimatePresence mode="wait">
         <Routes key={location.pathname} location={location}>
