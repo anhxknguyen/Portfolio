@@ -17,6 +17,10 @@
   }
 }
 
+li::before {
+  content: "• "; /* Adds a dash before each list item */
+}
+
 html {
   height: 100vh;
   height: 100svh;

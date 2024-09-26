@@ -12,7 +12,7 @@ const Roclab = () => {
   const descs = [
     "Product Manager",
     "UX Designer, Frontend Developer",
-    "Ongoing",
+    "2023 - current",
     "Next, Typescript, Figma",
   ];
   return (
@@ -83,14 +83,54 @@ const Roclab = () => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="flex flex-col w-full gap-2 sm:gap-4 xl:w-4/5"
+              className="flex flex-col w-full gap-2 xl:w-3/5"
             >
-              <h1 className="text-2xl font-neueBold md:text-4xl">
+              <h1 className="text-lg font-neueBold md:text-xl">Overview</h1>
+              <div className="flex flex-col gap-4">
+                <p className="leading-relaxed text-md sm:text-lg md:text-xl">
+                  Melcourses was developed as a tool for students to intuitively
+                  explore and schedule courses offered at the University of
+                  Rochester. It was created as part of Roclab, a student-run
+                  organization focused on solving campus problems through
+                  software solutions.
+                </p>
+                <p className="leading-relaxed text-md sm:text-lg md:text-xl">
+                  My personal contributions have included leading user research,
+                  prototyping and developing design solutions, and overseeing
+                  cross-functional team collaboration.
+                </p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col w-full gap-2"
+            >
+              <hr className="border-zinc-400" />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col w-full gap-2 xl:w-3/5"
+            >
+              <h1 className="text-lg font-neueBold md:text-xl">
                 Defining the Problem
               </h1>
               <p className="leading-relaxed text-md sm:text-lg md:text-2xl">
-                The current user flow for course scheduling on Workday and the
-                school's scheduling website is inefficient and unintuitive.
+                The{" "}
+                <span className="text-orange-800 font-neueMed">
+                  current user flow{" "}
+                </span>
+                for course scheduling on Workday and the university's native
+                platform is
+                <span className="text-orange-800 font-neueMed">
+                  {" "}
+                  inefficient and unintuitive.
+                </span>
               </p>
             </motion.div>
             <motion.div
@@ -100,24 +140,41 @@ const Roclab = () => {
               transition={{ duration: 0.5 }}
               className="flex flex-col w-full gap-2 xl:flex-row sm:gap-10"
             >
-              <div className="flex flex-col gap-2 p-6 border sm:gap-4 xl:w-1/2 border-lightBlack">
+              <div className="flex flex-col gap-2 p-4 border sm:p-6 sm:gap-4 xl:w-1/2 border-lightBlack">
                 <h1 className="text-lg sm:text-2xl xl:self-center font-neueBold">
-                  UR Course Scheduler
+                  UR Native Course Scheduler
                 </h1>
                 <motion.img
                   exit={{ opacity: 0, transition: { duration: 0.25 } }}
                   className="object-cover select-none xl:h-335"
                   src={cdcsOriginal}
                 />
-                <h1 className="text-2xl font-neueMed">Issues:</h1>
-                <ul className="leading-relaxed font-neueMed text-md sm:text-lg md:text-xl">
-                  <li>- Too much information on the screen</li>
-                  <li>- UI is outdated and crowded</li>
-                  <li>- Confusing to navigate</li>
-                </ul>
+                <div className="flex flex-col gap-6">
+                  <section>
+                    <h1 className="text-green-900 lg:text-2xl font-neueMed">
+                      Strengths:
+                    </h1>
+                    <ul className="leading-relaxed font-neueMed text-md sm:text-lg md:text-xl">
+                      <li className="text-green-900">
+                        Data is constantly maintained and updated by the
+                        University
+                      </li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h1 className="text-red-900 lg:text-2xl font-neueMed">
+                      Weaknesses:
+                    </h1>
+                    <ul className="leading-relaxed text-red-900 font-neueMed text-md sm:text-lg md:text-xl">
+                      <li>Too much information on the screen</li>
+                      <li>UI is outdated and crowded</li>
+                      <li>Lacks a scheduling feature</li>
+                    </ul>
+                  </section>
+                </div>
               </div>
 
-              <div className="flex flex-col gap-2 p-6 border border-lightBlack sm:gap-4 xl:w-1/2">
+              <div className="flex flex-col gap-2 p-4 border sm:p-6 border-lightBlack sm:gap-4 xl:w-1/2">
                 <h1 className="text-lg sm:text-2xl xl:self-center font-neueBold">
                   Workday
                 </h1>
@@ -125,12 +182,28 @@ const Roclab = () => {
                   className="object-cover select-none xl:h-335"
                   src={workdayFlow}
                 />
-                <h1 className="text-2xl font-neueMed">Issues:</h1>
-                <ul className="leading-relaxed font-neueMed text-md sm:text-lg md:text-xl">
-                  <li>- Login required to use Workday</li>
-                  <li>- Too many clicks</li>
-                  <li>- Confusing to navigate</li>
-                </ul>
+                <div className="flex flex-col gap-6">
+                  <section>
+                    <h1 className="text-green-900 lg:text-2xl font-neueMed">
+                      Strengths:
+                    </h1>
+                    <ul className="leading-relaxed font-neueMed text-md sm:text-lg md:text-xl">
+                      <li className="text-green-900">
+                        Course search page is intuitive to use
+                      </li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h1 className="text-red-900 lg:text-2xl font-neueMed">
+                      Weaknesses:
+                    </h1>
+                    <ul className="leading-relaxed text-red-900 font-neueMed text-md sm:text-lg md:text-xl">
+                      <li>Login required to use Workday</li>
+                      <li>Requires too many actions to add/save courses</li>
+                      <li>Lectures and workshops/labs are not grouped</li>
+                    </ul>
+                  </section>
+                </div>
               </div>
             </motion.div>
           </div>
