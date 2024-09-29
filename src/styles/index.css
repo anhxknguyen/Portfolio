@@ -17,6 +17,12 @@
   }
 }
 
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
 li::before {
   content: "• "; /* Adds a dash before each list item */
 }

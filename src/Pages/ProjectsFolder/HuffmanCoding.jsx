@@ -25,7 +25,7 @@ const HuffmanCoding = () => {
             className="flex flex-col w-full gap-3 xl:flex-row xl:justify-between text-start lg:items-center"
           >
             <div className="flex flex-col w-full gap-2">
-              <h1 className="text-4xl font-neueBold sm:text-5xl">
+              <h1 className="text-4xl font-neueBold sm:text-5xl text-balance">
                 Huffman Coding
               </h1>
               <p className="text-md msm:text-lg md:text-xl">

@@ -25,7 +25,9 @@ const Inkurra = () => {
             className="flex flex-col w-full gap-3 xl:flex-row xl:justify-between text-start lg:items-center"
           >
             <div className="flex flex-col w-full gap-2">
-              <h1 className="text-4xl font-neueBold sm:text-5xl">Inkurra</h1>
+              <h1 className="text-4xl font-neueBold sm:text-5xl text-balance">
+                Inkurra
+              </h1>
               <p className="text-md msm:text-lg md:text-xl">
                 Connecting artists with customers
               </p>

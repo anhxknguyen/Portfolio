@@ -34,7 +34,9 @@ const Roclab = () => {
             className="flex flex-col w-full gap-3 xl:flex-row xl:justify-between text-start lg:items-center"
           >
             <div className="flex flex-col w-full gap-2">
-              <h1 className="text-4xl font-neueBold sm:text-5xl">Melcourses</h1>
+              <h1 className="text-4xl font-neueBold sm:text-5xl text-balance">
+                Melcourses
+              </h1>
               <p className="text-md msm:text-lg md:text-xl">
                 Designing a solution for seamless course scheduling.
               </p>
@@ -126,7 +128,7 @@ const Roclab = () => {
                   current user flow{" "}
                 </span>
                 for course scheduling on Workday and the university's native
-                platform is
+                platform (CDCS) is
                 <span className="text-orange-800 font-neueMed">
                   {" "}
                   inefficient and unintuitive.
@@ -142,7 +144,7 @@ const Roclab = () => {
             >
               <div className="flex flex-col gap-2 p-4 bg-backgroundCard sm:p-6 sm:gap-4 xl:w-1/2 drop-shadow-xl">
                 <h1 className="text-lg sm:text-2xl xl:self-center font-neueBold">
-                  UR Native Course Scheduler
+                  UR Native Platform (CDCS)
                 </h1>
                 <motion.img
                   exit={{ opacity: 0, transition: { duration: 0.25 } }}
@@ -183,6 +185,9 @@ const Roclab = () => {
                     <h1 className=" lg:text-2xl font-neueMed">Strengths:</h1>
                     <ul className="leading-relaxed font-neueMed text-md sm:text-lg md:text-xl">
                       <li>Course search page is intuitive to use</li>
+                      <li>
+                        Card format is compact and allows for easy scanning
+                      </li>
                     </ul>
                   </section>
                   <section className="text-red-900">
@@ -195,6 +200,26 @@ const Roclab = () => {
                   </section>
                 </div>
               </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col w-full gap-2 xl:w-3/5"
+            >
+              <h1 className="text-lg font-neueBold md:text-xl">
+                Low Fidelity Prototypes
+              </h1>
+              <p className="leading-relaxed text-md sm:text-lg md:text-2xl">
+                Taking both the strengths and weaknesses of Workday and CDCS
+                into account, we drafted up a
+                <span className="text-orange-800 font-neueMed">
+                  {" "}
+                  low fidelity prototype{" "}
+                </span>
+                of the course search page.
+              </p>
             </motion.div>
           </div>
         </motion.div>

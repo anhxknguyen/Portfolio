@@ -19,11 +19,11 @@ const Projects = () => {
             transition: { delay: 0.1, duration: 0.25 },
           }}
           exit={{ opacity: 0, transition: { duration: 0.25 } }}
-          className="flex flex-col items-end justify-center gap-2 text-end msm:pt-10"
+          className="flex flex-col items-end justify-center gap-2 pt-10 text-end"
         >
           <div className="flex flex-col w-1/4sm:w-1/3">
             <h1 className="text-base font-neueBold sm:text-xl">Projects</h1>
-            <p className="text-sm sm:text-lg">
+            <p className="text-sm sm:text-lg text-balance">
               A collection of recent projects that I have worked on.
             </p>
           </div>

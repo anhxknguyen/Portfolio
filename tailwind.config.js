@@ -69,6 +69,7 @@ export default {
         backgroundColor: "#FAF9F6",
         backgroundCard: "#fffefa",
         beige: "#F5F5DC",
+        randomGreen: "#3eb05c",
       },
       keyframes: {
         gradient: {

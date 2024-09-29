@@ -32,9 +32,9 @@ const ListLink = ({ to, title, subtitle, year }) => {
       >
         <h1>{title}</h1>
         <h2
-          className={`text-sm ${
+          className={`text-sm text-balance ${
             isHovered ? "font-neueBoldItalic" : "font-neueMed"
-          } msm:text-base md:pt-2 `}
+          }  md:pt-2 `}
         >
           {subtitle} {width < 565 && <br></br>}({year})
         </h2>
