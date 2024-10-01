@@ -17,7 +17,7 @@ const Navbar = () => {
         projects
       </NavLink>
       <a
-        href="https://docs.google.com/document/d/1p1f22OXrYou-1p4IpKejgsry93xPE-Ffnx1AtQm1MOE/edit?usp=sharing"
+        href="https://drive.google.com/file/d/14xYFN5aAii5PYW-uxHPqEgmagY5WNsmz/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
         className="cursor-pointer hover:font-neueItalic"
