@@ -68,27 +68,7 @@ const StudySpaces = () => {
             className="w-full select-none lg:self-start"
             src={studyspaces}
           />
-          <p className="leading-relaxed">
-            During my time as a workshop TA, I was responsible for leading two
-            groups of 12-15 students in a 75 minutes weekly workshop/recitation
-            session. In these sessions, I assisted students in solving complex
-            object-oriented programming problems and reviewed key programming
-            concepts in the Java programming language.
-          </p>
-          <p className="leading-relaxed">
-            During my time as a workshop TA, I was responsible for leading two
-            groups of 12-15 students in a 75 minutes weekly workshop/recitation
-            session. In these sessions, I assisted students in solving complex
-            object-oriented programming problems and reviewed key programming
-            concepts in the Java programming language.
-          </p>
-          <p className="leading-relaxed">
-            During my time as a workshop TA, I was responsible for leading two
-            groups of 12-15 students in a 75 minutes weekly workshop/recitation
-            session. In these sessions, I assisted students in solving complex
-            object-oriented programming problems and reviewed key programming
-            concepts in the Java programming language.
-          </p>
+          <p className="leading-relaxed">Work in Progress.</p>
         </motion.div>
       </div>
     </div>

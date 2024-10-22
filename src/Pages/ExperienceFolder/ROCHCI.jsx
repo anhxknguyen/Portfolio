@@ -48,39 +48,7 @@ const ROCHCI = () => {
           exit={{ opacity: 0, transition: { duration: 0.25 } }}
           className="flex flex-col gap-8 sm:text-lg"
         >
-          <p className="leading-relaxed">
-            During my time as a workshop TA, I was responsible for leading two
-            groups of 12-15 students in a 75 minutes weekly workshop/recitation
-            session. In these sessions, I assisted students in solving complex
-            object-oriented programming problems and reviewed key programming
-            concepts in the Java programming language.
-          </p>
-          <p className="leading-relaxed">
-            As a workshop TA, I was also responsible for conducting a
-            semester-long research project on how to improve on the
-            effectiveness of the current workshop program. I worked alongside
-            Sherry Zhao, a friend and fellow workshop TA, to identify whether or
-            not icebreaker activities increased student engagement. You can read
-            more about it here:{" "}
-            <a
-              className="underline text-amber-300 hover:text-amber-700"
-              href="https://sites.google.com/u.rochester.edu/icebreakers/home"
-            >
-              Workshop Research Project
-            </a>
-          </p>
-          <p>
-            Working as a workshop TA not only allowed me to continue to hone my
-            programming and leadership skills, but it also allowed me to create
-            valuable bonds with both my students and fellow TAs. I have had the
-            honor of leading not one, but two groups of hard-working and
-            passionate, aspiring programmers like myself and have had the
-            priviledge of working with some of the most talented
-            leaders/programmers I had ever met in my group of workshop TAs, some
-            of whom I now call friends. If anyone of you are reading this
-            (whether you're a student or a fellow workshop TA), thank you for
-            making my first real job so memorable!
-          </p>
+          <p className="leading-relaxed">Work in Progress.</p>
         </motion.div>
       </div>
     </div>
