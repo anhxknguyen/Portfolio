@@ -19,7 +19,7 @@ const Roclab = () => {
     "Product Manager",
     "UX Designer, Frontend Developer",
     "2023 - current",
-    "Next, Typescript, Figma",
+    "Next, Typescript, Docker, Figma",
   ];
   return (
     <div className="mb-24">
