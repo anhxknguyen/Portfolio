@@ -6,7 +6,7 @@ import profile from "../images/profile.jpg";
 
 const About = () => {
   return (
-    <div>
+    <div className="mb-24">
       <BackToHome />
       <div className="flex flex-col items-center justify-center gap-10 pt-6 mx-0 mt-5 xl:flex-row-reverse xl:justify-between msm:mt-2 xl:mt-0 sm:mx-10 xl:mx-20 xl:gap-24 sm:pt-16">
         <motion.img
@@ -20,7 +20,7 @@ const About = () => {
             transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
           }}
           exit={{ opacity: 0, transition: { duration: 0.25 } }}
-          className="w-2/3 select-none sm:w-3/5 md:w-2/5 xl:w-1/3 xl:self-start"
+          className="w-2/3 rounded-md select-none sm:w-3/5 md:w-2/5 xl:w-1/3 xl:self-start"
           src={profile}
         />
         <motion.div

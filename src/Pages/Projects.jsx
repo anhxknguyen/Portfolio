@@ -5,7 +5,7 @@ import ListLink from "../Components/ListLink";
 
 const Projects = () => {
   return (
-    <motion.div className="h-auto overflow-hidden">
+    <motion.div className="h-auto mb-24 overflow-hidden">
       <BackToHome />
       <div className="overflow-hidden">
         <motion.div

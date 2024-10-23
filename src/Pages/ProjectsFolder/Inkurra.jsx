@@ -7,7 +7,7 @@ const Inkurra = () => {
   const sections = ["Timeline", "Skills"];
   const descs = ["2 Weeks", "React, Firebase, Figma"];
   return (
-    <div>
+    <div className="mb-24">
       <BackToProjects />
       <div className="flex flex-col items-center justify-center gap-10 pt-6 mt-5 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-44 lg:items-start sm:pt-16">
         <div className="w-full">
