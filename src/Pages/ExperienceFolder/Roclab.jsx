@@ -354,7 +354,7 @@ const Roclab = () => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="flex flex-col w-3/5 gap-2"
+              className="flex flex-col gap-2 xl:w-3/5"
             >
               <h1 className="text-lg font-neueBold md:text-xl">
                 Low Fidelity Prototypes
