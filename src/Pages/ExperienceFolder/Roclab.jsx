@@ -12,6 +12,8 @@ import lowFidel2 from "../../images/melcourses/lowfidel-2.png";
 import hiFidel1 from "../../images/melcourses/hifidel-1.png";
 import hiFidel2 from "../../images/melcourses/hifidel-2.png";
 import searchFlow from "../../images/melcourses/search-flow.png";
+import interview1 from "../../images/melcourses/interview-1.png";
+import interview2 from "../../images/melcourses/interview-2.png";
 
 const Roclab = () => {
   const sections = ["Current Role", "Former Roles", "Timeline", "Skills"];
@@ -246,15 +248,53 @@ const Roclab = () => {
                 <span className="text-orange-800 font-neueMed">
                   contextual inquiries
                 </span>{" "}
-                . with students to understand what they liked and disliked about
-                the current course scheduling process. <br /> <br />
-                Afterwards, we mapped our findings into an{" "}
-                <span className="text-orange-800 font-neueMed">
-                  affinity diagram
-                </span>
-                .
+                with students to understand what they liked and disliked about
+                the current course scheduling process.
               </p>
             </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col justify-center w-full gap-5 xl:flex-row"
+            >
+              <motion.img
+                initial={{
+                  opacity: 0,
+                  transform: "translateX(20px)",
+                }}
+                animate={{
+                  opacity: 1,
+                  transform: "translateX(0px)",
+                  transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
+                }}
+                exit={{ opacity: 0, transition: { duration: 0.25 } }}
+                className="self-center border rounded-md select-none xl:w-1/2"
+                src={interview1}
+              />
+              <motion.img
+                initial={{
+                  opacity: 0,
+                  transform: "translateX(20px)",
+                }}
+                animate={{
+                  opacity: 1,
+                  transform: "translateX(0px)",
+                  transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
+                }}
+                exit={{ opacity: 0, transition: { duration: 0.25 } }}
+                className="self-center border rounded-md select-none xl:w-1/2"
+                src={interview2}
+              />
+            </motion.div>
+            <p className="leading-relaxed text-md sm:text-lg md:text-2xl">
+              Afterwards, we mapped our findings into an{" "}
+              <span className="text-orange-800 font-neueMed">
+                affinity diagram
+              </span>
+              .
+            </p>
             <motion.img
               initial={{
                 opacity: 0,
