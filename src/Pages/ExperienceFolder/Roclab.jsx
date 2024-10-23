@@ -581,7 +581,7 @@ const Roclab = () => {
               <p className="leading-relaxed text-md sm:text-lg md:text-2xl">
                 I am working as a{" "}
                 <span className="text-orange-800 font-neueMed">
-                  Product Manager & Frontend Developer
+                  Product Manager
                 </span>{" "}
                 for Melcourses, overseeing the design and development of the new
                 cluster search engine feature as well as maintaining the current
