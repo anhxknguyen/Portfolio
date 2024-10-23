@@ -123,7 +123,6 @@ const Roclab = () => {
                 </div>
               </div>
             </motion.div>
-
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -133,7 +132,6 @@ const Roclab = () => {
             >
               <hr className="border-zinc-400" />
             </motion.div>
-
             {/* DEFINING PROBLEM */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -158,7 +156,6 @@ const Roclab = () => {
                 </span>
               </p>
             </motion.div>
-
             {/* COMPARING CDCS AND WORKDAY */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -228,7 +225,6 @@ const Roclab = () => {
                 </div>
               </div>
             </motion.div>
-
             {/* UNDERSTANDING PAIN POINTS */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -500,7 +496,56 @@ const Roclab = () => {
                 src={hiFidel2}
               />
             </motion.div>
-            {/* DEVELOPMENT SECTION */}
+            <div className="flex flex-col w-full gap-10 xl:w-3/5">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="flex flex-col w-full gap-2 "
+              >
+                <h1 className="text-lg font-neueBold md:text-xl">
+                  Development
+                </h1>
+                <p className="leading-relaxed text-md sm:text-lg md:text-2xl">
+                  After the high fidelity prototype was finalized, we began
+                  building the frontend Melcourses using{" "}
+                  <span className="text-orange-800 font-neueMed">Next.js</span>{" "}
+                  and{" "}
+                  <span className="text-orange-800 font-neueMed">
+                    Typescript
+                  </span>
+                  . I personally worked on the{" "}
+                  <span className="text-orange-800 font-neueMed">
+                    frontend development of the course card components
+                  </span>{" "}
+                  as well as minor bug fixes to the user interface.
+                </p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="flex flex-col w-full gap-2 "
+              >
+                <h1 className="text-lg font-neueBold md:text-xl">Launch!</h1>
+                <p className="leading-relaxed text-md sm:text-lg md:text-2xl">
+                  After a long couple of months of development, we finally
+                  launched{" "}
+                  <span className="text-blue-400 font-neueBold">
+                    Melcourses
+                  </span>{" "}
+                  to the University of Rochester community. We received over{" "}
+                  <span className="text-orange-800 font-neueMed">
+                    1200+ registered users
+                  </span>{" "}
+                  within the first 2 months of launch and have received very
+                  positive response from students in our university.
+                </p>
+              </motion.div>
+            </div>
+            {/* LESSONS LEARNED SECTION */}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -520,7 +565,6 @@ const Roclab = () => {
                 </h1>
               </motion.div>
             </motion.div>
-
             <div className="flex flex-col w-full gap-10 xl:flex-row xl:w-full">
               <motion.div
                 initial={{ opacity: 0 }}
