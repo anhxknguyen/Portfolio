@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import BackToExperience from "../../Components/buttons/BackToExperience";
 import SubInfo from "../../Components/SubInfo";
+import ml4stem from "../../images/ml4stem/ML4STEM.png";
 
 const ROCHCI = () => {
   const sections = ["Role", "Skills"];
@@ -48,7 +49,23 @@ const ROCHCI = () => {
           exit={{ opacity: 0, transition: { duration: 0.25 } }}
           className="flex flex-col gap-8 sm:text-lg"
         >
-          <p className="leading-relaxed">Work in Progress.</p>
+          <div className="flex flex-col items-center w-full gap-10 md:gap-16 lg:gap-20">
+            <motion.img
+              initial={{
+                opacity: 0,
+                transform: "translateX(20px)",
+              }}
+              animate={{
+                opacity: 1,
+                transform: "translateX(0px)",
+                transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
+              }}
+              exit={{ opacity: 0, transition: { duration: 0.25 } }}
+              className="border rounded-md select-none xl:w-4/5"
+              src={ml4stem}
+            />
+            <p className="leading-relaxed">Work in Progress.</p>
+          </div>
         </motion.div>
       </div>
     </div>
