@@ -650,7 +650,7 @@ const Roclab = () => {
                 </h1>
                 <p className="leading-relaxed text-md sm:text-lg md:text-xl">
                   Having an established design system makes both the design and
-                  development process so much efficient!
+                  development process so much more efficient!
                 </p>
               </motion.div>
             </div>
