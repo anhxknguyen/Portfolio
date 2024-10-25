@@ -477,8 +477,8 @@ const Roclab = () => {
                   <span className="text-orange-800 font-neueMed">
                     dynamically scrape major/minor/cluster data
                   </span>{" "}
-                  from the University's database without havin to manually input
-                  the data.
+                  from the University's database without having to manually
+                  input the data.
                 </p>
               </motion.div>
               <motion.div
