@@ -10,7 +10,7 @@ const Intro = () => {
         Product Manager & Full-Stack Software Engineer
       </h2>
       <h3 className="text-sm text-gray-400 sm:text-lg text-balance">
-        (this website was built using{" "}
+        (this portfolio website was built using{" "}
         <span className="font-neueMed">React</span>,{" "}
         <span className="font-neueMed">Framer Motion</span>, and{" "}
         <span className="font-neueMed">TailwindCSS</span>!)
