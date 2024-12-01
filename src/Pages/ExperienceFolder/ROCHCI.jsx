@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import BackToExperience from "../../Components/buttons/BackToExperience";
 import SubInfo from "../../Components/SubInfo";
@@ -6,10 +6,32 @@ import ml4stem from "../../images/ml4stem/ML4STEM.png";
 import tasksGif from "../../images/ml4stem/ml4stem-tasks.gif";
 import newFunction from "../../images/ml4stem/newFunction.png";
 import updatedUI from "../../images/ml4stem/updatedUI.png";
+import ImageModal from "../../Components/ImageModal";
+import useIsMobile from "../../Tools/useIsMobile";
 
 const ROCHCI = () => {
   const sections = ["Role", "Skills"];
   const descs = ["Frontend Developer", "React, Redux, LESS"];
+
+  const [isImageOpen, setIsImageOpen] = useState(false);
+  const [image, setImage] = useState(null);
+  const isMobile = useIsMobile();
+
+  const openModal = () => {
+    setIsImageOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsImageOpen(false);
+  };
+
+  useEffect(() => {
+    if (isMobile) {
+      setImage(null);
+      setIsImageOpen(false);
+    }
+  }, [isMobile]);
+
   return (
     <div className="mb-24">
       <BackToExperience />
@@ -224,7 +246,11 @@ const ROCHCI = () => {
                   },
                 }}
                 exit={{ opacity: 0, transition: { duration: 0.25 } }}
-                className="self-center border rounded-md select-none"
+                onClick={(e) => {
+                  setImage(updatedUI);
+                  openModal();
+                }}
+                className="self-center border rounded-md select-none hover:cursor-pointer hover:border-orange-300"
                 src={updatedUI}
               />
               <p className="text-zinc-500 font-neueItalic">
@@ -254,7 +280,11 @@ const ROCHCI = () => {
                   },
                 }}
                 exit={{ opacity: 0, transition: { duration: 0.25 } }}
-                className="self-center border rounded-md select-none"
+                onClick={(e) => {
+                  setImage(newFunction);
+                  openModal();
+                }}
+                className="self-center border rounded-md select-none hover:cursor-pointer hover:border-orange-300"
                 src={newFunction}
               />
               <p className="text-zinc-500 font-neueItalic">
@@ -319,6 +349,9 @@ const ROCHCI = () => {
           </div>
         </motion.div>
       </div>
+      {isImageOpen && !isMobile && (
+        <ImageModal image={image} onClose={closeModal} />
+      )}
     </div>
   );
 };

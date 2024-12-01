@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import BackToExperience from "../../Components/buttons/BackToExperience";
 import SubInfo from "../../Components/SubInfo";
@@ -14,6 +14,8 @@ import hiFidel2 from "../../images/melcourses/hifidel-2.png";
 import searchFlow from "../../images/melcourses/search-flow.png";
 import interview1 from "../../images/melcourses/interview-1.png";
 import interview2 from "../../images/melcourses/interview-2.png";
+import ImageModal from "../../Components/ImageModal";
+import useIsMobile from "../../Tools/useIsMobile";
 
 const Roclab = () => {
   const sections = ["Current Role", "Former Roles", "Timeline", "Skills"];
@@ -23,6 +25,25 @@ const Roclab = () => {
     "2023 - current",
     "Next, Typescript, Docker, Figma",
   ];
+  const [isImageOpen, setIsImageOpen] = useState(false);
+  const [image, setImage] = useState(null);
+  const isMobile = useIsMobile();
+
+  const openModal = () => {
+    setIsImageOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsImageOpen(false);
+  };
+
+  useEffect(() => {
+    if (isMobile) {
+      setImage(null);
+      setIsImageOpen(false);
+    }
+  }, [isMobile]);
+
   return (
     <div className="mb-24">
       <BackToExperience />
@@ -173,7 +194,11 @@ const Roclab = () => {
                 </h1>
                 <motion.img
                   exit={{ opacity: 0, transition: { duration: 0.25 } }}
-                  className="object-cover select-none xl:h-335"
+                  className="object-cover select-none xl:h-335 hover:cursor-pointer hover:border hover:border-orange-300"
+                  onClick={(e) => {
+                    setImage(cdcsOriginal);
+                    openModal();
+                  }}
                   src={cdcsOriginal}
                 />
                 <div className="flex flex-col gap-6">
@@ -203,7 +228,11 @@ const Roclab = () => {
                   Workday
                 </h1>
                 <motion.img
-                  className="object-cover select-none xl:h-335"
+                  className="object-cover select-none xl:h-335 hover:cursor-pointer hover:border hover:border-orange-300"
+                  onClick={(e) => {
+                    setImage(workdayFlow);
+                    openModal();
+                  }}
                   src={workdayFlow}
                 />
                 <div className="flex flex-col gap-6">
@@ -264,13 +293,17 @@ const Roclab = () => {
                   opacity: 0,
                   transform: "translateX(20px)",
                 }}
+                onClick={(e) => {
+                  setImage(interview1);
+                  openModal();
+                }}
                 animate={{
                   opacity: 1,
                   transform: "translateX(0px)",
                   transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
                 }}
                 exit={{ opacity: 0, transition: { duration: 0.25 } }}
-                className="self-center border rounded-md select-none xl:w-1/2"
+                className="self-center border rounded-md select-none xl:w-1/2 hover:cursor-pointer hover:border-orange-300"
                 src={interview1}
               />
               <motion.img
@@ -278,13 +311,17 @@ const Roclab = () => {
                   opacity: 0,
                   transform: "translateX(20px)",
                 }}
+                onClick={(e) => {
+                  setImage(interview2);
+                  openModal();
+                }}
                 animate={{
                   opacity: 1,
                   transform: "translateX(0px)",
                   transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
                 }}
                 exit={{ opacity: 0, transition: { duration: 0.25 } }}
-                className="self-center border rounded-md select-none xl:w-1/2"
+                className="self-center border rounded-md select-none xl:w-1/2 hover:cursor-pointer hover:border-orange-300"
                 src={interview2}
               />
             </motion.div>
@@ -305,8 +342,12 @@ const Roclab = () => {
                 transform: "translateX(0px)",
                 transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
               }}
+              onClick={(e) => {
+                setImage(affinityDiagram);
+                openModal();
+              }}
               exit={{ opacity: 0, transition: { duration: 0.25 } }}
-              className="self-center border rounded-md select-none xl:w-4/5"
+              className="self-center border rounded-md select-none xl:w-4/5 hover:cursor-pointer hover:border-orange-300"
               src={affinityDiagram}
             />
             <div className="flex flex-col w-full gap-10 xl:w-3/5">
@@ -380,8 +421,12 @@ const Roclab = () => {
                 transform: "translateX(0px)",
                 transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
               }}
+              onClick={(e) => {
+                setImage(searchFlow);
+                openModal();
+              }}
               exit={{ opacity: 0, transition: { duration: 0.25 } }}
-              className="self-center border rounded-md select-none xl:w-4/5"
+              className="self-center border rounded-md select-none xl:w-4/5 hover:cursor-pointer hover:border-orange-300"
               src={searchFlow}
             />
             {/* LOW FIDELITY PROTOTYPES */}
@@ -422,8 +467,12 @@ const Roclab = () => {
                   transform: "translateX(0px)",
                   transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
                 }}
+                onClick={(e) => {
+                  setImage(lowFidel1);
+                  openModal();
+                }}
                 exit={{ opacity: 0, transition: { duration: 0.25 } }}
-                className="self-center border rounded-md select-none xl:w-1/2"
+                className="self-center border rounded-md select-none xl:w-1/2 hover:cursor-pointer hover:border-orange-500"
                 src={lowFidel1}
               />
               <motion.img
@@ -436,8 +485,12 @@ const Roclab = () => {
                   transform: "translateX(0px)",
                   transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
                 }}
+                onClick={(e) => {
+                  setImage(lowFidel2);
+                  openModal();
+                }}
                 exit={{ opacity: 0, transition: { duration: 0.25 } }}
-                className="self-center border rounded-md select-none xl:w-1/2"
+                className="self-center border rounded-md select-none xl:w-1/2 hover:cursor-pointer hover:border-orange-500"
                 src={lowFidel2}
               />
             </motion.div>
@@ -517,8 +570,12 @@ const Roclab = () => {
                   transform: "translateX(0px)",
                   transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
                 }}
+                onClick={(e) => {
+                  setImage(hiFidel1);
+                  openModal();
+                }}
                 exit={{ opacity: 0, transition: { duration: 0.25 } }}
-                className="self-center border rounded-md select-none xl:w-1/2"
+                className="self-center border rounded-md select-none xl:w-1/2 hover:cursor-pointer hover:border-orange-500"
                 src={hiFidel1}
               />
               <motion.img
@@ -531,8 +588,12 @@ const Roclab = () => {
                   transform: "translateX(0px)",
                   transition: { delay: 0.2, duration: 0.25, ease: "easeInOut" },
                 }}
+                onClick={(e) => {
+                  setImage(hiFidel2);
+                  openModal();
+                }}
                 exit={{ opacity: 0, transition: { duration: 0.25 } }}
-                className="self-center border rounded-md select-none xl:w-1/2"
+                className="self-center border rounded-md select-none xl:w-1/2 hover:cursor-pointer hover:border-orange-500"
                 src={hiFidel2}
               />
             </motion.div>
@@ -675,6 +736,9 @@ const Roclab = () => {
           </div>
         </motion.div>
       </div>
+      {isImageOpen && !isMobile && (
+        <ImageModal image={image} onClose={closeModal} />
+      )}
     </div>
   );
 };
