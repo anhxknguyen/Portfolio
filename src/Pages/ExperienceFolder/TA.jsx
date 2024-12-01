@@ -69,7 +69,20 @@ const TA = () => {
             Data Structures and Algorithms TA (Fall 2024)
           </h1>
           <div className="flex flex-col gap-4 sm:text-lg">
-            <p className="leading-relaxed">Work in Progress</p>
+            <p className="leading-relaxed">
+              As a Data Structures and Algorithms Teaching Assistant, my
+              responsibilities included grading programming assignments related
+              to DSA and provide constructive feedback. I also held office hours
+              twice a week where I guided students through complex DSA concepts,
+              clarified doubts, and helped them tackle challenging programming
+              problems.
+            </p>
+            <p>
+              My work as a DSA Teaching Assistant not only allowed me to pay it
+              forward by teaching others what I have learned from those who came
+              before me, but also allowed me to reinforce my understanding of
+              core DSA concepts through teaching.
+            </p>
           </div>
         </motion.section>
         <motion.section
@@ -90,20 +103,19 @@ const TA = () => {
           </h1>
           <div className="flex flex-col gap-4 sm:text-lg">
             <p className="leading-relaxed">
-              During my time as a workshop TA, I was responsible for leading two
-              groups of 12-15 students in a 75 minutes weekly
+              During my time as a workshop leader, I was responsible for leading
+              two groups of 12-15 students in a 75 minutes weekly
               workshop/recitation session. In these sessions, I assisted
               students in solving complex object-oriented programming problems
               and reviewed key programming concepts in the Java programming
               language.
             </p>
             <p className="leading-relaxed">
-              As a workshop TA, I was also responsible for conducting a
-              semester-long research project on how to improve on the
-              effectiveness of the current workshop program. I worked alongside
-              Sherry Zhao, a friend and fellow workshop TA, to identify whether
-              or not icebreaker activities increased student engagement. You can
-              read more about it here:{" "}
+              I was also responsible for conducting a semester-long research
+              project on how to improve on the effectiveness of the current
+              workshop program. I worked alongside Sherry Zhao, a friend and
+              fellow TA, to identify whether or not icebreaker activities
+              increased student engagement. You can read more about it here:{" "}
               <a
                 className="text-amber-500 hover:text-orange-500"
                 href="https://sites.google.com/u.rochester.edu/icebreakers/home"
@@ -114,14 +126,14 @@ const TA = () => {
               </a>
             </p>
             <p>
-              Working as a workshop TA not only allowed me to continue to hone
-              my programming and leadership skills, but it also allowed me to
-              create valuable bonds with both my students and fellow TAs. I have
-              had the honor of leading not one, but two groups of hard-working
-              and passionate, aspiring programmers like myself and have had the
-              priviledge of working with some of the most talented
-              leaders/programmers I had ever met in my group of workshop TAs,
-              some of whom I now call friends. If anyone of you are reading this
+              Working as a workshop leader not only allowed me to continue to
+              hone my programming and leadership skills, but it also allowed me
+              to create valuable bonds with both my students and fellow TAs. I
+              have had the honor of leading not one, but two groups of
+              hard-working and passionate, aspiring programmers like myself and
+              have had the priviledge of working with some of the most talented
+              leaders/programmers I had ever met in my group of TAs, some of
+              whom I now call friends. If anyone of you are reading this
               (whether you're a student or a fellow workshop TA), thank you for
               making my first real job so memorable!
             </p>
