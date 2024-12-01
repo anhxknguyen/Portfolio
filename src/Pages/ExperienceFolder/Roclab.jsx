@@ -286,7 +286,7 @@ const Roclab = () => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="flex flex-col justify-center w-full gap-5 xl:flex-row"
+              className="flex flex-col justify-center w-3/5 gap-5 xl:flex-row"
             >
               <motion.img
                 initial={{
