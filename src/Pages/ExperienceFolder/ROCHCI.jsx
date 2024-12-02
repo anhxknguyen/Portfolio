@@ -10,8 +10,12 @@ import ImageModal from "../../Components/ImageModal";
 import useIsMobile from "../../Tools/useIsMobile.js";
 
 const ROCHCI = () => {
-  const sections = ["Role", "Skills"];
-  const descs = ["Frontend Developer", "React, Redux, LESS"];
+  const sections = ["Role", "Skills", "Timeline"];
+  const descs = [
+    "Frontend Developer",
+    "React, Redux, LESS",
+    "May 2024 - September 2024",
+  ];
 
   const [isImageOpen, setIsImageOpen] = useState(false);
   const [image, setImage] = useState(null);

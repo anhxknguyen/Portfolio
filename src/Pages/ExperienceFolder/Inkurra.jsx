@@ -12,7 +12,7 @@ import ImageModal from "../../Components/ImageModal.jsx";
 
 const Inkurra = () => {
   const sections = ["Timeline", "Skills"];
-  const descs = ["2 Weeks", "React, Firebase, Figma"];
+  const descs = ["May 2024", "React, Firebase, Figma"];
   const [isImageOpen, setIsImageOpen] = useState(false);
   const [image, setImage] = useState(null);
   const isMobile = useIsMobile();
@@ -98,7 +98,7 @@ const Inkurra = () => {
               <div className="flex flex-col gap-2">
                 {/* OVERVIEW */}
                 <h1 className="text-lg font-neueBold md:text-xl">
-                  Inspiration
+                  Overview + Inspiration
                 </h1>
                 <div className="flex flex-col gap-4">
                   <p className="leading-relaxed text-md sm:text-lg md:text-xl">

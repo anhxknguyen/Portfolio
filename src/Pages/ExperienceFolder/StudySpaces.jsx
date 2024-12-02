@@ -14,7 +14,7 @@ const StudySpaces = () => {
     "Best AI App Built With Cloudflare",
     "React, TailwindCSS, Figma",
     "UX Designer & Frontend Developer",
-    "24 Hours",
+    "24 Hours in March 2024",
   ];
 
   const [isImageOpen, setIsImageOpen] = useState(false);

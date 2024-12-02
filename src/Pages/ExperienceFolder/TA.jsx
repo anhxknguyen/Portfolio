@@ -17,11 +17,12 @@ const TA = () => {
     }
   });
 
-  const sections = ["Current Role", "Former Roles", "Skills"];
+  const sections = ["Current Role", "Former Roles", "Skills", "Timeline"];
   const descs = [
     "Data Structures and Algorithms TA",
     "Intro to CS Workshop Leader",
     "Java, Leadership",
+    "Spring 2023, Fall 2024",
   ];
   return (
     <div className="mb-24">
