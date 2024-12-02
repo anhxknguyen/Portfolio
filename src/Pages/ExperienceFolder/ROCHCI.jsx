@@ -7,7 +7,7 @@ import tasksGif from "../../images/ml4stem/ml4stem-tasks.gif";
 import newFunction from "../../images/ml4stem/newFunction.png";
 import updatedUI from "../../images/ml4stem/updatedUI.png";
 import ImageModal from "../../Components/ImageModal";
-import useIsMobile from "../../Tools/useIsMobile";
+import useIsMobile from "../../Tools/useIsMobile.js";
 
 const ROCHCI = () => {
   const sections = ["Role", "Skills"];

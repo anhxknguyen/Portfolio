@@ -31,24 +31,71 @@ const Experience = () => {
         </motion.div>
         <div>
           <motion.div className="flex flex-col items-end justify-center block h-full gap-10 py-10 text-3xl text-end md:text-5xl lg:text-7xl md:gap-10 no-scrollbar">
-            <ListLink
-              to="roclab"
-              title="Melcourses"
-              subtitle="Product Manager & UX/Frontend Developer"
-              year="2023 - current"
-            />
-            <ListLink
-              to="rochci"
-              title="ROC HCI"
-              subtitle="Frontend Research Intern"
-              year="2024 - current"
-            />
-            <ListLink
-              to="ta"
-              title="University of Rochester"
-              subtitle="Computer Science Workshop Teaching Assistant"
-              year="2023"
-            />
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <ListLink
+                to="roclab"
+                title="Melcourses"
+                subtitle="Product Manager & UX/Frontend Developer"
+                year="2023 - current"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <ListLink
+                to="rochci"
+                title="ROC HCI"
+                subtitle="Frontend Research Intern"
+                year="2024 - current"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <ListLink
+                to="ta"
+                title="University of Rochester"
+                subtitle="Computer Science Workshop Teaching Assistant"
+                year="2023"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <ListLink
+                to="studyspaces"
+                title="Study Spaces"
+                subtitle="BrickHackX Best AI Application Winner"
+                year="2024"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <ListLink
+                to="inkurra"
+                title="Inkurra"
+                subtitle="Fullstack React.js & Firebase"
+                year="2024"
+              />
+            </motion.div>
           </motion.div>
         </div>
       </div>

@@ -15,7 +15,7 @@ import searchFlow from "../../images/melcourses/search-flow.png";
 import interview1 from "../../images/melcourses/interview-1.png";
 import interview2 from "../../images/melcourses/interview-2.png";
 import ImageModal from "../../Components/ImageModal";
-import useIsMobile from "../../Tools/useIsMobile";
+import useIsMobile from "../../Tools/useIsMobile.js";
 
 const Roclab = () => {
   const sections = ["Current Role", "Former Roles", "Timeline", "Skills"];
