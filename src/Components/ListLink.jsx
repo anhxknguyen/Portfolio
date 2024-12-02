@@ -30,7 +30,7 @@ const ListLink = ({ to, title, subtitle, year }) => {
         to={to}
         className={`cursor-pointer ${isHovered && "font-neueItalic"}`}
       >
-        <h1>{title}</h1>
+        <h1 className="text-5xl">{title}</h1>
         <h2
           className={`text-sm text-balance ${
             isHovered ? "font-neueBoldItalic" : "font-neueMed"

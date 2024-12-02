@@ -347,7 +347,7 @@ const Roclab = () => {
                 openModal();
               }}
               exit={{ opacity: 0, transition: { duration: 0.25 } }}
-              className="self-center border rounded-md select-none xl:w-4/5 hover:cursor-pointer hover:border-orange-300"
+              className="self-center border rounded-md select-none xl:w-3/5 hover:cursor-pointer hover:border-orange-300"
               src={affinityDiagram}
             />
             <div className="flex flex-col w-full gap-10 xl:w-3/5">
