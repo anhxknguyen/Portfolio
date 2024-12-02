@@ -196,7 +196,9 @@ const StudySpaces = () => {
             >
               <div className="flex flex-col gap-2">
                 {/* OVERVIEW */}
-                <h1 className="text-lg font-neueBold md:text-xl">Impact</h1>
+                <h1 className="text-lg font-neueBold md:text-xl">
+                  Impact + Reflection
+                </h1>
                 <div className="flex flex-col gap-4">
                   <p className="leading-relaxed text-md sm:text-lg md:text-xl">
                     Our project won
@@ -205,6 +207,12 @@ const StudySpaces = () => {
                       Best AI APP BUILT with Cloudflare{" "}
                     </span>
                     at the hackathon!
+                  </p>
+                  <p>
+                    Given more time to work on the project, our team would've
+                    loved to integrate uploading for more file formats beyond
+                    PDFs and allow users specify custom quiz query parameters
+                    for more customization.
                   </p>
                 </div>
               </div>
