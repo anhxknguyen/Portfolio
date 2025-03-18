@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import BackToHome from "../Components/buttons/BackToHome";
-import profile from "../images/profile.jpg";
+import profile from "../images/profile3.jpg";
 
 const About = () => {
   return (
