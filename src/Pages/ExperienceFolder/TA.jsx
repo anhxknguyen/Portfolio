@@ -22,8 +22,7 @@ const TA = () => {
     "Data Structures and Algorithms TA",
     "Intro to CS Workshop Leader",
     "Java, Leadership",
-    "Spring 2023, Fall 2024",
-    "Spring 2025",
+    "Spring 2023, Fall 2024, Spring 2025",
   ];
   return (
     <div className="mb-24">
