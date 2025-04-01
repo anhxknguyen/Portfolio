@@ -40,7 +40,20 @@ const Experience = () => {
               <ListLink
                 to="roclab"
                 title="Melcourses"
-                subtitle="Product Manager & UX/Frontend Developer"
+                subtitle="Technical Product Manager"
+                year="2023 - current"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <ListLink
+                to="ta"
+                title="University of Rochester"
+                subtitle="Computer Science Workshop Teaching Assistant"
                 year="2023 - current"
               />
             </motion.div>
@@ -54,20 +67,7 @@ const Experience = () => {
                 to="rochci"
                 title="ROC HCI"
                 subtitle="Frontend Research Intern"
-                year="2024 - current"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <ListLink
-                to="ta"
-                title="University of Rochester"
-                subtitle="Computer Science Workshop Teaching Assistant"
-                year="2023"
+                year="2024"
               />
             </motion.div>
             <motion.div
