@@ -119,8 +119,14 @@ const StudySpaces = () => {
                     converting it into an interactive quiz game.
                   </p>
                   <p className="leading-relaxed text-md sm:text-lg md:text-xl">
-                    My personal contributions included designing and developing
-                    the user experience interface of the application.
+                    My personal contributions included{" "}
+                    <span className="text-orange-800 font-neueMed">
+                      designing and developing
+                    </span>
+                    the user experience interface of the application using{" "}
+                    <span className="text-orange-800 font-neueMed">
+                      Figma, React, and TailwindCSS{" "}
+                    </span>
                   </p>
                 </div>
               </div>

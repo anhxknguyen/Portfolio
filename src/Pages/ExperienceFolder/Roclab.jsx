@@ -139,9 +139,9 @@ const Roclab = () => {
                 {/* IMPACT */}
                 <h1 className="text-lg font-neueBold md:text-xl">Impact</h1>
                 <div className="flex gap-4">
-                  <h2 className="flex flex-col gap-2 text-xl text-transparent msm:text-2xl bg-gradient-to-r from-amber-600 to-orange-800 bg-clip-text xl:text-3xl font-neueMed md:font-neueBold">
+                  <h2 className="flex flex-col gap-2 text-xl msm:text-2xl text-amber-600 xl:text-3xl font-neueMed md:font-neueBold">
                     <div>&rarr; 1200+ Registered Users</div>
-                    <div>&rarr; Received University Endorsement & Funding</div>
+                    <div>&rarr; Received $3500+ in Endorsement & Funding</div>
                   </h2>
                 </div>
               </div>

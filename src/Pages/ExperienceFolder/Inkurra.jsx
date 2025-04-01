@@ -109,8 +109,11 @@ const Inkurra = () => {
                     commission them.
                   </p>
                   <p className="leading-relaxed text-md sm:text-lg md:text-xl">
-                    Inkurra was my first ever fullstack project built entirely
-                    by myself using React, Tailwind, and Firebase.
+                    Inkurra was my first ever fullstack project{" "}
+                    <span className="text-orange-800 font-neueMed">
+                      built entirely by myself using React, Tailwind, and
+                      Firebase.{" "}
+                    </span>
                   </p>
                 </div>
               </div>
