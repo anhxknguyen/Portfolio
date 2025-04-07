@@ -157,17 +157,7 @@ const TA = () => {
               fellow TA, to identify whether or not icebreaker activities
               increased student engagement (PS: it does by 15%!).
             </p>
-            <p>
-              You can read more about it here:{" "}
-              <a
-                className="text-amber-500 hover:text-orange-500"
-                href="https://sites.google.com/u.rochester.edu/icebreakers/home"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Workshop Research Project
-              </a>
-            </p>
+
             <p>
               Working as a workshop leader not only allowed me to continue to
               hone my programming and leadership skills, but it also allowed me
