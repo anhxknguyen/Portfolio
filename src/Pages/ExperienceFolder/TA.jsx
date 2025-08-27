@@ -71,8 +71,7 @@ const TA = () => {
           </h1>
           <div className="flex flex-col gap-4 sm:text-lg">
             <p className="leading-relaxed">
-              I helped students with web development concepts and technologies
-              like{" "}
+              I helped students with web development technologies like{" "}
               <span className="text-orange-800 font-neueMed">
                 HTML, CSS, Javascript, and Flask{" "}
               </span>{" "}
