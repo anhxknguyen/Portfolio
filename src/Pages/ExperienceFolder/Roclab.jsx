@@ -18,11 +18,10 @@ import ImageModal from "../../Components/ImageModal";
 import useIsMobile from "../../Tools/useIsMobile.js";
 
 const Roclab = () => {
-  const sections = ["Current Role", "Former Roles", "Timeline", "Skills"];
+  const sections = ["Roles", "Timeline", "Skills"];
   const descs = [
-    "Product Manager",
-    "UX Designer, Frontend Developer",
-    "2023 - current",
+    "Product Manager, Operations, Frontend",
+    "2023 - 2025",
     "Next, Typescript, Docker, Figma",
   ];
   const [isImageOpen, setIsImageOpen] = useState(false);

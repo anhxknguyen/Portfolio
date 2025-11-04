@@ -38,10 +38,23 @@ const Experience = () => {
               transition={{ duration: 0.5 }}
             >
               <ListLink
+                to="ias"
+                title="(WIP) Integral Ad Science"
+                subtitle="Product Management Intern"
+                year="2025 - current"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <ListLink
                 to="roclab"
                 title="Melcourses"
                 subtitle="Technical Product Manager"
-                year="2023 - current"
+                year="2023 - 2025"
               />
             </motion.div>
             <motion.div

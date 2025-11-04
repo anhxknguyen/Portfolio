@@ -14,6 +14,7 @@ import ThisWebsite from "./Pages/ProjectsFolder/PortfolioWebsite";
 import Inkurra from "./Pages/ExperienceFolder/Inkurra";
 import Roclab from "./Pages/ExperienceFolder/Roclab";
 import TA from "./Pages/ExperienceFolder/TA";
+import IAS from "./Pages/ExperienceFolder/IAS";
 import ROCHCI from "./Pages/ExperienceFolder/ROCHCI";
 
 function Portfolio() {
@@ -28,6 +29,7 @@ function Portfolio() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
+          <Route exact path="/experience/ias" element={<IAS />} />
           <Route exact path="/experience/roclab" element={<Roclab />} />
           <Route exact path="/experience/ta" element={<TA />} />
           <Route exact path="/experience/rochci" element={<ROCHCI />} />
